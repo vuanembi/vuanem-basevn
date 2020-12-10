@@ -1,0 +1,128 @@
+{
+    "id": 10151,
+    "type": "workflowjobs",
+    "hid": "MTAxNTEud29ya2Zsb3dqb2Jz",
+    "token": "ed8348b59ec31e8b48413b3cc1dd343d",
+    "status": 0,
+    "state": "active",
+    "starred": 0,
+    "name": 8,
+    "title": "",
+    "content": "Ch\u00fac m\u1eebng  \u0111\u00e3 mua h\u00e0ng th\u00e0nh c\u00f4ng \u0111\u01a1n h\u00e0ng gi\u00e1 tr\u1ecb ",
+    "color": 1,
+    "owners": [],
+    "followers": [
+        "ngocphan"
+    ],
+    "since": 1607567160,
+    "last_update": 1607567160,
+    "finish_at": 0,
+    "results": [],
+    "stage_id": 5265,
+    "stage_export": {
+        "id": 5265,
+        "name": "B\u00e1n h\u00e0ng l\u00ean \u0111\u01a1n h\u00e0ng",
+        "metatype": "active",
+        "workflow_id": 964,
+        "type": "workflowstages"
+    },
+    "stats": {
+        "notes": 0,
+        "posts": 1,
+        "files": 0,
+        "likes": 0
+    },
+    "user_id": 0,
+    "username": "",
+    "todos": [],
+    "creator_id": 67898,
+    "creator_username": "ngocphan",
+    "deadline": 0,
+    "stage_deadline": 1607568960,
+    "stage_start": 1607567160,
+    "workflow_id": 964,
+    "workflow_export": {
+        "id": 964,
+        "name": "Check gi\u00e1",
+        "type": "workflows"
+    },
+    "moves": [
+        {
+            "id": 34185,
+            "user_id": 0,
+            "mover_id": 67898,
+            "job_id": 10151,
+            "stage_id": 5265,
+            "stage_start": 1607567160,
+            "stage_deadline": 1607568960,
+            "from_stage_id": 0,
+            "duration": 1800
+        }
+    ],
+    "acl": {
+        "view": 1,
+        "status": 1,
+        "managed": 1,
+        "edit": 1
+    },
+    "files": [],
+    "form": [
+        {
+            "id": "so_po",
+            "name": "S\u1ed1 PO",
+            "value": "",
+            "type": "text",
+            "placeholder": "S\u1ed1 PO theo c\u00f4ng th\u1ee9c DDMMYY-M-No"
+        },
+        {
+            "id": "don_dat_mua",
+            "name": "\u0110\u01a1n \u0111\u1eb7t mua",
+            "value": "",
+            "type": "file",
+            "placeholder": "",
+            "url": ""
+        },
+        {
+            "id": "nhan_vien_phu_trach",
+            "name": "Nh\u00e2n vi\u00ean KD ph\u1ee5 tr\u00e1ch",
+            "value": "",
+            "type": "text",
+            "placeholder": ""
+        },
+        {
+            "id": "thanh_tien",
+            "name": "Th\u00e0nh ti\u1ec1n",
+            "value": "",
+            "type": "int",
+            "placeholder": ""
+        }
+    ],
+    "on_failed": {},
+    "tags": "",
+    "data": {
+        "first_assignee": 0
+    },
+    "keyword": 101518,
+    "first_assignee": 0,
+    "gen_id": 10151,
+    "gen_name": 8,
+    "gen_type": "workflowjobs",
+    "gen_link": "base-workflow://job/10151",
+    "gen_list": null,
+    "gen_prev": null,
+    "progression": [
+        {
+            "name": "B\u00e1n h\u00e0ng l\u00ean \u0111\u01a1n h\u00e0ng",
+            "start": 1607567160,
+            "duration": "0 days, 00 hours, 00 minutes and 00 seconds"
+        }
+    ],
+    "custom_so_po": "",
+    "custom_don_dat_mua": "",
+    "custom_nhan_vien_phu_trach": "",
+    "custom_thanh_tien": "",
+    "failed_reason": "",
+    "failed_note": "",
+    "bot_username": "khanhnguyen01_bot",
+    "bot_name": "Th\u1ea7n t\u1ed1c"
+}
