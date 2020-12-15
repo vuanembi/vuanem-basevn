@@ -1,39 +1,77 @@
 from google.cloud import bigquery
-from datetime import datetime
 import json
-from flask import jsonify
 
-def main(request):
-    gbq_client = bigquery.Client()
-    new_dict = request.form.to_dict(flat=True)
-    for key, value in new_dict.items():
+
+def transform_to_json(request):
+    result = request.form.to_dict(flat=True)
+    for key, value in result.items():
         try:
-            new_dict[key] = json.loads(value)
+            result[key] = json.loads(value)
         except:
             pass
-        if type(new_dict[key]) == list:
-            for i in new_dict[key]:
+        if type(result[key]) == list:
+            for i in result[key]:
                 if type(i) == dict:
                     for key2, value2 in i.items():
                         try:
                             i[key2] = json.loads(value2)
                         except:
                             pass
-        elif type(new_dict[key]) == dict:
-            for key2, value2 in new_dict[key].items():
+        elif type(result[key]) == dict:
+            for key2, value2 in result[key].items():
                 try:
-                    new_dict[key][key2] = json.loads(value2)
+                    result[key][key2] = json.loads(value2)
                 except:
                     pass
-        print(key, value)
-        
-    with open('sss.json', 'w') as f:
-        json.dump(new_dict, f, indent=4)
-    #table_id = "Basevn.basevn_workflow"
-    #rows_to_insert = [
-    #    new_dict
-    #]
-    #errors = gbq_client.insert_rows_json(table_id, rows_to_insert)
-    #print(errors)
-    #print(y)
-    return "ok"
+    return result
+
+
+def select_from_json(result, platform):
+    if platform == 'workflow':
+        selected_result = {
+            'id': result['id'],
+            'name': result['name'],
+            'since': result['since'],
+            'last_update': result['last_update'],
+            'stage_id': result['stage_id'],
+            'stage_start': result['stage_start'],
+            'stage_deadline': result['deadline'],
+            'moves': result['moves'],
+            'form': result['form'],
+            'progression': result['progression']
+        }
+    elif platform == 'wework':
+        for i in result['form']:
+            i.pop('options')
+        selected_result = {
+            'id': result['id'],
+            'name': result['name'],
+            'deadline': result['deadline'],
+            'stime': result['stime'],
+            'since': result['since'],
+            'last_update': result['last_update'],
+            'form': result['form']
+        }
+    return selected_result
+
+
+def load(result, table_id):
+    bq_client = bigquery.Client()
+    with open(f'{table_id}.json', 'a') as f:
+        json.dump(result, f, indent=4)
+    rows_to_insert = [result]
+    errors = bq_client.insert_rows_json(table_id, rows_to_insert)
+
+
+def main(request):
+    result = request.form.to_dict(flat=True)
+    if 'workflow' in result['gen_link']:
+        row = transform_to_json(request)
+        row = select_from_json(row, 'workflow')
+        load(row, 'Basevn.workflow')
+        return 'workflow'
+    elif 'wework' in result['gen_link']:
+        row = transform_to_json(request)
+        row = select_from_json(row, 'wework')
+        load(row, 'Basevn.wework')
+        return 'wework'
