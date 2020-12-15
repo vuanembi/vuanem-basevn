@@ -1,0 +1,8 @@
+.vscode
+LP*
+logs/.*
+test*
+__pycache__/
+*.log
+sms*
+.pylint
