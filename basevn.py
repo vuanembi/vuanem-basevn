@@ -64,14 +64,17 @@ def load(result, table_id):
 
 
 def main(request):
-    result = request.form.to_dict(flat=True)
-    if 'workflow' in result['gen_link']:
-        row = transform_to_json(request)
-        row = select_from_json(row, 'workflow')
-        load(row, 'Basevn.workflow')
-        return 'workflow'
-    elif 'wework' in result['gen_link']:
-        row = transform_to_json(request)
-        row = select_from_json(row, 'wework')
-        load(row, 'Basevn.wework')
-        return 'wework'
+    if request.method == 'GET':
+        return 'okay'
+    elif request.method == 'POST':
+        result = request.form.to_dict(flat=True)
+        if 'workflow' in result.get('gen_link'):
+            row = transform_to_json(request)
+            #row = select_from_json(row, 'workflow')
+            load(row, 'Basevn.workflow')
+            return 'workflow'
+        elif 'wework' in result.get('gen_link'):
+            row = transform_to_json(request)
+            #row = select_from_json(row, 'wework')
+            load(row, 'Basevn.wework')
+            return 'wework'
