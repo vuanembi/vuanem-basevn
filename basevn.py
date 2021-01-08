@@ -105,12 +105,25 @@ def truncate_table():
                      ''')
 
 
-async def main():
+def send_telegram(text):
+    url = f'https://api.telegram.org/bot1259711927:AAHwBvjQfAVPH04z_OSXS4eDAs1GdvPiRcM/sendMessage'
+    payload = {
+        'chat_id': '-465061044',
+        'text': text
+    }
+    return requests.post(url=url, data=payload)
+
+
+async def run():
+    send_telegram('basevn >>>')
     truncate_table()
     for i in trange(125):
         time.sleep(1)
+    send_telegram('basevn done sleep')
     await get_workflow_jobs(get_workflows())
+    send_telegram('basevn done')
 
 
-if __name__ == '__main__':
-    asyncio.run(main())
+def main(request):
+    asyncio.run(run())
+    return 'ok'
