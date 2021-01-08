@@ -4,7 +4,7 @@ import requests
 from datetime import datetime
 import time
 import os
-from tqdm.asyncio import tqdm
+from tqdm.asyncio import tqdm, trange
 from google.cloud import bigquery
 import json
 import itertools
@@ -107,7 +107,8 @@ def truncate_table():
 
 async def main():
     truncate_table()
-    time.sleep(125)
+    for i in trange(125):
+        time.sleep(1)
     await get_workflow_jobs(get_workflows())
 
 
