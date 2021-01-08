@@ -29,38 +29,42 @@ def transform_to_json(request):
 def select_from_json(result, platform):
     if platform == 'workflow':
         selected_result = {
-            'id': result['id'],
-            'name': result['name'],
-            'since': result['since'],
-            'last_update': result['last_update'],
-            'stage_id': result['stage_id'],
-            'stage_start': result['stage_start'],
-            'stage_deadline': result['deadline'],
-            'moves': result['moves'],
-            'form': result['form'],
-            'progression': result['progression']
+            'id': result.get('id'),
+            'name': result.get('name'),
+            'since': result.get('since'),
+            'last_update': result.get('last_update'),
+            'stage_id': result.get('stage_id'),
+            'stage_start': result.get('stage_start'),
+            'stage_deadline': result.get('deadline'),
+            'moves': result.get('moves'),
+            'form': result.get('form'),
+            'progression': result.get('progression'),
+            'on_failed': result.get('on_failed')
         }
     elif platform == 'wework':
         for i in result['form']:
             i.pop('options')
         selected_result = {
-            'id': result['id'],
-            'name': result['name'],
-            'deadline': result['deadline'],
-            'stime': result['stime'],
-            'since': result['since'],
-            'last_update': result['last_update'],
-            'form': result['form']
+            'id': result.get('id'),
+            'name': result.get('name'),
+            'deadline': result.get('deadline'),
+            'stime': result.get('stime'),
+            'since': result.get('since'),
+            'last_update': result.get('last_update'),
+            'form': result.get('form')
         }
+    else:
+        selected_result = None
     return selected_result
 
 
 def load(result, table_id):
     bq_client = bigquery.Client()
-    with open(f'{table_id}.json', 'a') as f:
-        json.dump(result, f, indent=4)
+    #with open(f'{table_id}.json', 'a') as f:
+    #    json.dump(result, f, indent=4)
     rows_to_insert = [result]
     errors = bq_client.insert_rows_json(table_id, rows_to_insert)
+    return str(errors)
 
 
 def main(request):
@@ -70,11 +74,9 @@ def main(request):
         result = request.form.to_dict(flat=True)
         if 'workflow' in result.get('gen_link'):
             row = transform_to_json(request)
-            #row = select_from_json(row, 'workflow')
-            load(row, 'Basevn.workflow')
-            return 'workflow'
+            row = select_from_json(row, 'workflow')
+            return load(row, 'Basevn.workflow')
         elif 'wework' in result.get('gen_link'):
             row = transform_to_json(request)
-            #row = select_from_json(row, 'wework')
-            load(row, 'Basevn.wework')
-            return 'wework'
+            row = select_from_json(row, 'wework')
+            return load(row, 'Basevn.wework')

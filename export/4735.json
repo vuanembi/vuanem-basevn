@@ -1,0 +1,533 @@
+[
+    {
+        "id": 207916,
+        "type": "workflowjobs",
+        "hid": "MjA3OTE2LndvcmtmbG93am9icw",
+        "token": "46359d705997d71925ee5558dc233343",
+        "status": -10,
+        "state": "failed",
+        "starred": 0,
+        "name": "Test1",
+        "title": "Lo\u1ea1i c\u1eeda h\u00e0ng: M\u1eb7t ph\u1ed1 HN/HCM &middot; V\u1ecb tr\u00ed tr\u00ean map/ \u0110\u1ecba ch\u1ec9 c\u1ee5 th\u1ec3: aaaaaaaaaaaaaaaaaa &middot; T\u00ean ch\u1ee7 nh\u00e0/ T\u00ean ng\u01b0\u1eddi m\u00f4i gi\u1edbi: Naruto &middot; S\u1ed1 \u0111i\u1ec7n tho\u1ea1i: 0773314405 &middot; Gi\u00e1 thu\u00ea bao g\u1ed3m thu\u1ebf ph\u1ea3i tr\u1ea3 (VN\u0110): 100000 &middot; Chi\u1ec1u ngang m\u1eb7t ti\u1ec1n (m): 20 &middot; T\u1ed5ng Di\u1ec7n t\u00edch kinh doanh (m2): 50 &middot; K\u1ebft c\u1ea5u nh\u00e0: \u0110\u1ea5t tr\u1ed1ng &middot; CP c\u1ea3i t\u1ea1o d\u1ef1 ki\u1ebfn (VN\u0110): 3.500.000 &middot; C\u1ea7n \u0111\u1ea1t \u00cdT NH\u1ea4T 1 trong c\u00e1c ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn: S\u1ed1 l\u01b0\u1ee3ng \u0111\u1ed1i th\u1ee7 ch\u0103n ga/n\u1ec7m/n\u1ed9i th\u1ea5t tr\u00ean tr\u1ee5c \u0111\u01b0\u1eddng b\u00e1n k\u00ednh 1km \u22658 &middot; C\u1ea7n \u0111\u1ea1t T\u1ea4T C\u1ea2 ti\u00eau ch\u00ed v\u1ecb tr\u00ed: N\u1eb1m trong gi\u00e1 thu\u00ea cho ph\u00e9p (3 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn: 80-90tr/2 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn: 60-80tr/1 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn \u226450tr) &middot; LO\u1ea0I n\u1ebfu c\u00f3 M\u1ed8T ti\u00eau ch\u00ed li\u1ec7t: \u22653 ch\u01b0\u1edbng ng\u1ea1i tr\u01b0\u1edbc c\u1eeda h\u00e0ng (C\u00e2y xanh/c\u1ed9t \u0111i\u1ec7n/c\u00f4ng tr\u00ecnh x\u00e2y d\u1ef1ng/n\u1eb1m tr\u00ean t\u1ea7ng 2) &middot; Ti\u00eau ch\u00ed \u01b0u ti\u00ean: Tr\u1ef1c di\u1ec7n ho\u1eb7c c\u00e1ch ng\u00e3 3/ng\u00e3 4/v\u00f2ng xuy\u1ebfn \u2264 50m &middot; Ti\u00eau ch\u00ed tr\u1eeb \u0111i\u1ec3m: C\u00e1ch v\u1ecb tr\u00ed quay \u0111\u1ea7u \u226520m tr\u00ean \u0111\u01b0\u1eddng c\u00f3 gi\u1ea3i ph\u00e2n c\u00e1ch c\u1ee9ng &middot; Ghi ch\u00fa: meomew &middot; 1. S\u1ed1 l\u01b0\u1ee3ng h\u1ed9 d\u00e2n trong b\u00e1n k\u00ednh 1km: 33222 &middot; K\u1ebft lu\u1eadn: S\u1ed1 l\u01b0\u1ee3ng h\u1ed9 d\u00e2n trong b\u00e1n k\u00ednh 1km: \u0110\u1ea1t &middot; 2. S\u1ed1 l\u01b0\u1ee3ng \u0110TCT ch\u0103n ga, \u0111\u1ec7m, n\u1ed9i th\u1ea5t tr\u00ean c\u00f9ng tr\u1ee5c \u0111\u01b0\u1eddng trong b\u00e1n k\u00ednh 1km: 32 &middot; K\u1ebft lu\u1eadn: S\u1ed1 l\u01b0\u1ee3ng \u0110TCT: \u0110\u1ea1t &middot; 3. N\u1eb1m trong khu v\u1ef1c CBD th\u00e0nh ph\u1ed1: C\u00f3 &middot; 4. S\u1ed1 l\u01b0\u1ee3ng c\u0103n h\u1ed9 c\u1ee7a c\u00e1c d\u1ef1 \u00e1n s\u1eafp b\u00e0n giao trong 2km &gt;= 6000 c\u0103n: 87 &middot; 5. S\u1ed1 l\u01b0\u1ee3ng h\u1ed9 d\u00e2n trong b\u00e1n k\u00ednh 2km: 111 &middot; 6. Kho\u1ea3ng c\u00e1ch \u0111\u1ebfn c\u1eeda h\u00e0ng Vuanem g\u1ea7n nh\u1ea5t: Kh\u00f4ng c\u00f3 &middot; K\u1ebeT LU\u1eacN 1: \u0110\u1ea1t 1/4 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn &middot; \u0110\u1ec0 XU\u1ea4T: N\u00ean m\u1edf c\u1eeda h\u00e0ng &middot; M\u1eb7t ti\u1ec1n: \u0110\u1ea1t &middot; H\u00ecnh d\u1ea1ng nh\u00e0, c\u1ea5u tr\u00fac nh\u00e0, kh\u1ea3 n\u0103ng x\u00e2y s\u1eeda c\u1ea3i t\u1ea1o: \u0110\u1ea1t &middot; Tr\u1ef1c ti\u1ebfp quan s\u00e1t m\u1eadt \u0111\u1ed9 d\u00e2n c\u01b0: \u0110\u1ea1t &middot; Nh\u1eadn di\u1ec7n c\u1eeda h\u00e0ng (\u0111\u1ed1i th\u1ee7, thu nh\u1eadp c\u1ee7a d\u00e2n c\u01b0): \u0110\u1ea1t &middot; Ti\u00eau ch\u00ed \u0111i\u1ec3m li\u1ec7t: C\u00f3 &middot; Ghi ch\u00fa: Meow &middot; K\u1ebft lu\u1eadn: \u0110\u1ed3ng \u00fd \u0111\u00e0m ph\u00e1n &middot; Gi\u00e1 thu\u00ea ch\u01b0a bao g\u1ed3m thu\u1ebf ph\u1ea3i tr\u1ea3 (VN\u0110/th\u00e1ng): 22222 &middot; Gi\u00e1 thu\u00ea bao g\u1ed3m thu\u1ebf ph\u1ea3i tr\u1ea3 (VN\u0110/th\u00e1ng): 2222222 &middot; \u0110i\u1ec1u kho\u1ea3n t\u0103ng gi\u00e1: safdasdasd &middot; S\u1ed1 th\u00e1ng c\u1ecdc: 222 &middot; S\u1ed1 th\u00e1ng tr\u1ea3 tr\u01b0\u1edbc: 2222222 &middot; Th\u1eddi h\u1ea1n h\u1ee3p \u0111\u1ed3ng (th\u00e1ng): 222 &middot; Th\u1eddi gian s\u1eeda ch\u1eefa mi\u1ec5n ph\u00ed: 2 &middot; \u0110\u01a1n ph\u01b0\u01a1ng \u0111\u00ecnh ch\u1ec9 h\u1ee3p \u0111\u1ed3ng: M\u1ea5t c\u1ecdc &middot; Ghi ch\u00fa: ADSASDASD &middot; K\u00fd H\u1ee3p \u0111\u1ed3ng: 14/01/2021 &middot; Nh\u1eadn m\u1eb7t b\u1eb1ng t\u1eeb ch\u1ee7 nh\u00e0: 12/01/2021 &middot; B\u00e0n giao m\u1eb7t b\u1eb1ng s\u1ea1ch: 06/01/2021 &middot; Ng\u00e0y khai tr\u01b0\u01a1ng d\u1ef1 ki\u1ebfn: 20/01/2021 &middot; ",
+        "content": "<p>asdasdasasd</p>",
+        "color": 3,
+        "owners": [],
+        "followers": [
+            "hungnguyen2",
+            "anhphung",
+            "tungnguyen",
+            "",
+            "binhnguyen",
+            "hanguyen7"
+        ],
+        "since": 1610092029,
+        "last_update": 1610092252,
+        "finish_at": 1610092252,
+        "results": [],
+        "stage_id": 31211,
+        "stage_export": {
+            "id": 31211,
+            "name": "Failed",
+            "metatype": "failed",
+            "workflow_id": 4735,
+            "type": "workflowstages"
+        },
+        "stats": {
+            "notes": 0,
+            "posts": 1,
+            "files": 0,
+            "likes": 0
+        },
+        "user_id": 152945,
+        "username": "tungnguyen",
+        "todos": [
+            {
+                "id": 517149,
+                "name": "G\u0110KD \u0111\u00e3 x\u00e1c nh\u1eadn H\u0110",
+                "status": 1,
+                "stage_id": 31216,
+                "deadline": 0,
+                "username": "tungnguyen",
+                "type": "workflowtodos",
+                "link": "base-workflow://todos?todo=517149"
+            },
+            {
+                "id": 517143,
+                "name": "\u0110\u00e3 \u0111\u00ednh k\u00e8m \u1ea3nh qu\u00e9t \u0111\u1ecbnh tuy\u1ebfn",
+                "status": 1,
+                "stage_id": 31213,
+                "deadline": 0,
+                "username": "hungnguyen2",
+                "type": "workflowtodos",
+                "link": "base-workflow://todos?todo=517143"
+            },
+            {
+                "id": 517139,
+                "name": "\u0110\u00e3 \u0111\u00ednh k\u00e8m \u1ea3nh m\u1eb7t b\u1eb1ng",
+                "status": 1,
+                "stage_id": 31212,
+                "deadline": 0,
+                "username": "tungnguyen",
+                "type": "workflowtodos",
+                "link": "base-workflow://todos?todo=517139"
+            }
+        ],
+        "creator_id": 152946,
+        "creator_username": "anhphung",
+        "deadline": 0,
+        "stage_deadline": 1610178506,
+        "stage_start": 1610092117,
+        "workflow_id": 4735,
+        "workflow_export": {
+            "id": 4735,
+            "name": "Test 1 - M\u1eb7t b\u1eb1ng HN/HCM (Copy)",
+            "type": "workflows"
+        },
+        "moves": [
+            {
+                "id": 814518,
+                "user_id": 152945,
+                "mover_id": 152946,
+                "job_id": 207916,
+                "stage_id": 31212,
+                "stage_start": 1610092029,
+                "stage_deadline": 1610351229,
+                "from_stage_id": 0,
+                "duration": 259200,
+                "past": 1,
+                "stage_end": 1610092040
+            },
+            {
+                "id": 814523,
+                "user_id": 152950,
+                "mover_id": 152946,
+                "job_id": 207916,
+                "stage_id": 31213,
+                "stage_start": 1610092040,
+                "stage_deadline": 1610351240,
+                "from_stage_id": 31212,
+                "duration": 259200,
+                "past": 1,
+                "stage_end": 1610092069
+            },
+            {
+                "id": 814528,
+                "user_id": 0,
+                "mover_id": 152946,
+                "job_id": 207916,
+                "stage_id": 31214,
+                "stage_start": 1610092068,
+                "stage_deadline": 1610178468,
+                "from_stage_id": 31213,
+                "duration": 86400,
+                "past": 1,
+                "stage_end": 1610092086
+            },
+            {
+                "id": 814532,
+                "user_id": 152955,
+                "mover_id": 152946,
+                "job_id": 207916,
+                "stage_id": 31217,
+                "stage_start": 1610092086,
+                "stage_deadline": 1610120886,
+                "from_stage_id": 31214,
+                "duration": 28800,
+                "past": 1,
+                "stage_end": 1610092090
+            },
+            {
+                "id": 814534,
+                "user_id": 152954,
+                "mover_id": 152946,
+                "job_id": 207916,
+                "stage_id": 31215,
+                "stage_start": 1610092090,
+                "stage_deadline": 1611042490,
+                "from_stage_id": 31217,
+                "duration": 950400,
+                "past": 1,
+                "stage_end": 1610092106
+            },
+            {
+                "id": 814537,
+                "user_id": 152945,
+                "mover_id": 152946,
+                "job_id": 207916,
+                "stage_id": 31216,
+                "stage_start": 1610092106,
+                "stage_deadline": 1610178506,
+                "from_stage_id": 31215,
+                "duration": 86400,
+                "past": 1,
+                "stage_end": 1610092117
+            },
+            {
+                "id": 814541,
+                "user_id": 152945,
+                "mover_id": 152946,
+                "job_id": 207916,
+                "stage_id": 31210,
+                "stage_start": 1610092117,
+                "stage_deadline": 1610178506,
+                "from_stage_id": 31216,
+                "duration": 86389,
+                "past": 1,
+                "stage_end": 1610092252
+            },
+            {
+                "id": 814572,
+                "user_id": 152945,
+                "mover_id": 152946,
+                "job_id": 207916,
+                "stage_id": 31211,
+                "stage_start": 1610092117,
+                "stage_deadline": 1610178506,
+                "from_stage_id": 31210,
+                "duration": 86389
+            }
+        ],
+        "acl": {},
+        "files": [],
+        "form": [
+            {
+                "id": "loai_cua_hang",
+                "name": "Lo\u1ea1i c\u1eeda h\u00e0ng",
+                "value": "M\u1eb7t ph\u1ed1 HN/HCM",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "vi_tri_tren_map",
+                "name": "V\u1ecb tr\u00ed tr\u00ean map/ \u0110\u1ecba ch\u1ec9 c\u1ee5 th\u1ec3",
+                "value": "aaaaaaaaaaaaaaaaaa",
+                "type": "textarea",
+                "placeholder": ""
+            },
+            {
+                "id": "ten_chu_nha_ten_nguoi_moi_gioi",
+                "name": "T\u00ean ch\u1ee7 nh\u00e0/ T\u00ean ng\u01b0\u1eddi m\u00f4i gi\u1edbi",
+                "value": "Naruto",
+                "type": "text",
+                "placeholder": ""
+            },
+            {
+                "id": "so_dien_thoai",
+                "name": "S\u1ed1 \u0111i\u1ec7n tho\u1ea1i",
+                "value": "0773314405",
+                "type": "text",
+                "placeholder": ""
+            },
+            {
+                "id": "gia_thue_bao_gom_thue_phai_tra_v",
+                "name": "Gi\u00e1 thu\u00ea bao g\u1ed3m thu\u1ebf ph\u1ea3i tr\u1ea3 (VN\u0110)",
+                "value": 100000,
+                "type": "int",
+                "placeholder": ""
+            },
+            {
+                "id": "chieu_ngang_mat_tien",
+                "name": "Chi\u1ec1u ngang m\u1eb7t ti\u1ec1n (m)",
+                "value": 20,
+                "type": "int",
+                "placeholder": ""
+            },
+            {
+                "id": "tong_dien_tich_kinh_doanh",
+                "name": "T\u1ed5ng Di\u1ec7n t\u00edch kinh doanh (m2)",
+                "value": 50,
+                "type": "int",
+                "placeholder": ""
+            },
+            {
+                "id": "ket_cau_nha",
+                "name": "K\u1ebft c\u1ea5u nh\u00e0",
+                "value": "\u0110\u1ea5t tr\u1ed1ng",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "cp_cai_tao_du_kien",
+                "name": "CP c\u1ea3i t\u1ea1o d\u1ef1 ki\u1ebfn (VN\u0110)",
+                "value": "3.500.000",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "ZZJ6WGXBHNC98P553BMFX6DN87LAW4DP",
+                "name": "C\u1ea7n \u0111\u1ea1t \u00cdT NH\u1ea4T 1 trong c\u00e1c ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn",
+                "value": "S\u1ed1 l\u01b0\u1ee3ng \u0111\u1ed1i th\u1ee7 ch\u0103n ga/n\u1ec7m/n\u1ed9i th\u1ea5t tr\u00ean tr\u1ee5c \u0111\u01b0\u1eddng b\u00e1n k\u00ednh 1km \u22658",
+                "type": "select-m",
+                "placeholder": ""
+            },
+            {
+                "id": "SQNB9FGDUBB3RTAHVLGFMJGKCQJHFK7R",
+                "name": "C\u1ea7n \u0111\u1ea1t T\u1ea4T C\u1ea2 ti\u00eau ch\u00ed v\u1ecb tr\u00ed",
+                "value": "N\u1eb1m trong gi\u00e1 thu\u00ea cho ph\u00e9p (3 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn: 80-90tr/2 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn: 60-80tr/1 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn \u226450tr)",
+                "type": "select-m",
+                "placeholder": ""
+            },
+            {
+                "id": "FVGQ3MYFCNYDMZ3YVHFX468VMTGWT6PJ",
+                "name": "LO\u1ea0I n\u1ebfu c\u00f3 M\u1ed8T ti\u00eau ch\u00ed li\u1ec7t",
+                "value": "\u22653 ch\u01b0\u1edbng ng\u1ea1i tr\u01b0\u1edbc c\u1eeda h\u00e0ng (C\u00e2y xanh/c\u1ed9t \u0111i\u1ec7n/c\u00f4ng tr\u00ecnh x\u00e2y d\u1ef1ng/n\u1eb1m tr\u00ean t\u1ea7ng 2)",
+                "type": "select-m",
+                "placeholder": ""
+            },
+            {
+                "id": "NTXEKZV6TFVAE8FP4ZMMS6HG28WEK7VY",
+                "name": "Ti\u00eau ch\u00ed \u01b0u ti\u00ean",
+                "value": "Tr\u1ef1c di\u1ec7n ho\u1eb7c c\u00e1ch ng\u00e3 3/ng\u00e3 4/v\u00f2ng xuy\u1ebfn \u2264 50m",
+                "type": "select-m",
+                "placeholder": ""
+            },
+            {
+                "id": "SUQQH3KAL2J3QZT6CM94BM234A8N3TQB",
+                "name": "Ti\u00eau ch\u00ed tr\u1eeb \u0111i\u1ec3m",
+                "value": "C\u00e1ch v\u1ecb tr\u00ed quay \u0111\u1ea7u \u226520m tr\u00ean \u0111\u01b0\u1eddng c\u00f3 gi\u1ea3i ph\u00e2n c\u00e1ch c\u1ee9ng",
+                "type": "select-m",
+                "placeholder": ""
+            },
+            {
+                "id": "ghi_chu",
+                "name": "Ghi ch\u00fa",
+                "value": "meomew",
+                "type": "textarea",
+                "placeholder": ""
+            },
+            {
+                "id": "households_1km",
+                "name": "1. S\u1ed1 l\u01b0\u1ee3ng h\u1ed9 d\u00e2n trong b\u00e1n k\u00ednh 1km",
+                "value": 33222,
+                "type": "int",
+                "placeholder": ""
+            },
+            {
+                "id": "ket_luan_households_1km",
+                "name": "K\u1ebft lu\u1eadn: S\u1ed1 l\u01b0\u1ee3ng h\u1ed9 d\u00e2n trong b\u00e1n k\u00ednh 1km",
+                "value": "\u0110\u1ea1t",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "dtct",
+                "name": "2. S\u1ed1 l\u01b0\u1ee3ng \u0110TCT ch\u0103n ga, \u0111\u1ec7m, n\u1ed9i th\u1ea5t tr\u00ean c\u00f9ng tr\u1ee5c \u0111\u01b0\u1eddng trong b\u00e1n k\u00ednh 1km",
+                "value": 32,
+                "type": "int",
+                "placeholder": ""
+            },
+            {
+                "id": "ket_luan_dtct",
+                "name": "K\u1ebft lu\u1eadn: S\u1ed1 l\u01b0\u1ee3ng \u0110TCT",
+                "value": "\u0110\u1ea1t",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "cbd",
+                "name": "3. N\u1eb1m trong khu v\u1ef1c CBD th\u00e0nh ph\u1ed1",
+                "value": "C\u00f3",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "can_ho_ban_giao",
+                "name": "4. S\u1ed1 l\u01b0\u1ee3ng c\u0103n h\u1ed9 c\u1ee7a c\u00e1c d\u1ef1 \u00e1n s\u1eafp b\u00e0n giao trong 2km &gt;= 6000 c\u0103n",
+                "value": 87,
+                "type": "int",
+                "placeholder": ""
+            },
+            {
+                "id": "households_2km",
+                "name": "5. S\u1ed1 l\u01b0\u1ee3ng h\u1ed9 d\u00e2n trong b\u00e1n k\u00ednh 2km",
+                "value": 111,
+                "type": "int",
+                "placeholder": ""
+            },
+            {
+                "id": "khoang_cach_vn_gan_nhat",
+                "name": "6. Kho\u1ea3ng c\u00e1ch \u0111\u1ebfn c\u1eeda h\u00e0ng Vuanem g\u1ea7n nh\u1ea5t",
+                "value": "Kh\u00f4ng c\u00f3",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "ket_luan_1",
+                "name": "K\u1ebeT LU\u1eacN 1",
+                "value": "\u0110\u1ea1t 1/4 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "de_xuat",
+                "name": "\u0110\u1ec0 XU\u1ea4T",
+                "value": "N\u00ean m\u1edf c\u1eeda h\u00e0ng",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "dieu_kien_mo_cua_hang",
+                "name": "\u0110i\u1ec1u ki\u1ec7n m\u1edf c\u1eeda h\u00e0ng",
+                "value": "",
+                "type": "text",
+                "placeholder": ""
+            },
+            {
+                "id": "mat_tien",
+                "name": "M\u1eb7t ti\u1ec1n",
+                "value": "\u0110\u1ea1t",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "hinh_dang_nha_cau_truc_nha_kha_n",
+                "name": "H\u00ecnh d\u1ea1ng nh\u00e0, c\u1ea5u tr\u00fac nh\u00e0, kh\u1ea3 n\u0103ng x\u00e2y s\u1eeda c\u1ea3i t\u1ea1o",
+                "value": "\u0110\u1ea1t",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "truc_tiep_quan_sat_mat_do_dan_cu",
+                "name": "Tr\u1ef1c ti\u1ebfp quan s\u00e1t m\u1eadt \u0111\u1ed9 d\u00e2n c\u01b0",
+                "value": "\u0110\u1ea1t",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "nhan_dien_cua_hang_doi_thu_thu_n",
+                "name": "Nh\u1eadn di\u1ec7n c\u1eeda h\u00e0ng (\u0111\u1ed1i th\u1ee7, thu nh\u1eadp c\u1ee7a d\u00e2n c\u01b0)",
+                "value": "\u0110\u1ea1t",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "tieu_chi_diem_liet",
+                "name": "Ti\u00eau ch\u00ed \u0111i\u1ec3m li\u1ec7t",
+                "value": "C\u00f3",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "HKJQC8DDTXYVUHXZ3HRHP5E3W9ZNPLJN",
+                "name": "Ghi ch\u00fa",
+                "value": "Meow",
+                "type": "text",
+                "placeholder": ""
+            },
+            {
+                "id": "ket_luan",
+                "name": "K\u1ebft lu\u1eadn",
+                "value": "\u0110\u1ed3ng \u00fd \u0111\u00e0m ph\u00e1n",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "gia_thue_chua_bao_gom_thue_phai_",
+                "name": "Gi\u00e1 thu\u00ea ch\u01b0a bao g\u1ed3m thu\u1ebf ph\u1ea3i tr\u1ea3 (VN\u0110/th\u00e1ng)",
+                "value": 22222,
+                "type": "int",
+                "placeholder": ""
+            },
+            {
+                "id": "LXFTYXNTML64TW7RWUYQPMZC73USX2KQ",
+                "name": "Gi\u00e1 thu\u00ea bao g\u1ed3m thu\u1ebf ph\u1ea3i tr\u1ea3 (VN\u0110/th\u00e1ng)",
+                "value": 2222222,
+                "type": "int",
+                "placeholder": ""
+            },
+            {
+                "id": "dieu_khoan_tang_gia",
+                "name": "\u0110i\u1ec1u kho\u1ea3n t\u0103ng gi\u00e1",
+                "value": "safdasdasd",
+                "type": "text",
+                "placeholder": ""
+            },
+            {
+                "id": "so_thang_coc",
+                "name": "S\u1ed1 th\u00e1ng c\u1ecdc",
+                "value": 222,
+                "type": "int",
+                "placeholder": ""
+            },
+            {
+                "id": "so_thang_tra_truoc",
+                "name": "S\u1ed1 th\u00e1ng tr\u1ea3 tr\u01b0\u1edbc",
+                "value": 2222222,
+                "type": "int",
+                "placeholder": ""
+            },
+            {
+                "id": "thoi_han_hop_dong_thang",
+                "name": "Th\u1eddi h\u1ea1n h\u1ee3p \u0111\u1ed3ng (th\u00e1ng)",
+                "value": 222,
+                "type": "int",
+                "placeholder": ""
+            },
+            {
+                "id": "thoi_gian_sua_chua_mien_phi",
+                "name": "Th\u1eddi gian s\u1eeda ch\u1eefa mi\u1ec5n ph\u00ed",
+                "value": 2,
+                "type": "text",
+                "placeholder": ""
+            },
+            {
+                "id": "don_phuong_dinh_chi_hop_dong",
+                "name": "\u0110\u01a1n ph\u01b0\u01a1ng \u0111\u00ecnh ch\u1ec9 h\u1ee3p \u0111\u1ed3ng",
+                "value": "M\u1ea5t c\u1ecdc",
+                "type": "select",
+                "placeholder": ""
+            },
+            {
+                "id": "SUJ4NM9GKASBPEQ9G29JM98VHMXMMYX6",
+                "name": "Ghi ch\u00fa",
+                "value": "ADSASDASD",
+                "type": "textarea",
+                "placeholder": ""
+            },
+            {
+                "id": "ky_hop_dong",
+                "name": "K\u00fd H\u1ee3p \u0111\u1ed3ng",
+                "value": "01/14/2021",
+                "type": "date",
+                "placeholder": ""
+            },
+            {
+                "id": "nhan_mat_bang_tu_chu_nha",
+                "name": "Nh\u1eadn m\u1eb7t b\u1eb1ng t\u1eeb ch\u1ee7 nh\u00e0",
+                "value": "01/12/2021",
+                "type": "date",
+                "placeholder": ""
+            },
+            {
+                "id": "ban_giao_mat_bang_sach",
+                "name": "B\u00e0n giao m\u1eb7t b\u1eb1ng s\u1ea1ch",
+                "value": "01/06/2021",
+                "type": "date",
+                "placeholder": ""
+            },
+            {
+                "id": "ngay_khai_truong_du_kien",
+                "name": "Ng\u00e0y khai tr\u01b0\u01a1ng d\u1ef1 ki\u1ebfn",
+                "value": "01/20/2021",
+                "type": "date",
+                "placeholder": ""
+            }
+        ],
+        "on_failed": {
+            "stage_id": 31210,
+            "failed_reason_id": "lcprmwcydwjlfdlcqukulecxvwwerhkz",
+            "failed_name": "Ch\u1ee7 nh\u00e0 cho b\u00ean kh\u00e1c thu\u00ea",
+            "note": "",
+            "since": 1610092252
+        },
+        "tags": [],
+        "data": {
+            "deadline_by_timesheet": 0,
+            "first_assignee": 152945,
+            "last_assignee": 152945
+        },
+        "keyword": "207916test1nguyenhuutungtungnguyenloaicuahangmatphohnhcmvitritrenmapdiachicutheaaaaaaaaaaaaaaaaaatenchunhatennguoimoigioinarutosodienthoai0773314405giathuebaogomthuephaitravnd100000chieungangmattienm20tongdientichkinhdoanhm250ketcaunhadattrongcpcaitaodukienvnd3.500.000candatitnhat1trongcactieuchidinhtuyensoluongdoithuchanganemnoithattrentrucduongbankinh1km8candattatcatieuchivitrinamtronggiathuechophep3tieuchidinhtuyen8090tr2tieuchidinhtuyen6080tr1tieuchidinhtuyen50trloaineucomottieuchiliet3chuongngaitruoccuahangcayxanhcotdiencongtrinhxaydungnamtrentang2tieuchiuutientrucdienhoaccachnga3nga4vongxuyen50mtieuchitrudiemcachvitriquaydau20mtrenduongcogiaiphancachcungghichumeomew1.soluonghodantrongbankinh1km33222ketluansoluonghodantrongbankinh1kmdat2.soluongdtctchangademnoithattrencungtrucduongtrongbankinh1km32ketluansoluongdtctdat3.namtrongkhuvuccbdthanhphoco4.soluongcanhocuacacduansapbangiaotrong2km6000can875.soluonghodantrongbankinh2km1116.khoangcachdencuahangvuanemgannhatkhongcoketluan1dat14tieuchidinhtuyendexuatnenmocuahangmattiendathinhdangnhacautrucnhakhanangxaysuacaitaodattructiepquansatmatdodancudatnhandiencuahangdoithuthunhapcuadancudattieuchidiemlietcoghichumeowketluandongydamphangiathuechuabaogomthuephaitravndthang22222giathuebaogomthuephaitravndthang2222222dieukhoantanggiasafdasdasdsothangcoc222sothangtratruoc2222222thoihanhopdongthang222thoigiansuachuamienphi2donphuongdinhchihopdongmatcocghichuadsasdasdkyhopdong14012021nhanmatbangtuchunha12012021bangiaomatbangsach06012021ngaykhaitruongdukien20012021chunhachobenkhacthueasdasdasasd",
+        "deadline_by_timesheet": 0,
+        "first_assignee": 152945
+    }
+][{"id": 207916, "type": "workflowjobs", "hid": "MjA3OTE2LndvcmtmbG93am9icw", "token": "c1b11cb41ecfdd4b56a68dc934ac7ab1", "status": -10, "state": "failed", "starred": 0, "name": "Test1", "title": "Lo\u1ea1i c\u1eeda h\u00e0ng: M\u1eb7t ph\u1ed1 HN/HCM &middot; V\u1ecb tr\u00ed tr\u00ean map/ \u0110\u1ecba ch\u1ec9 c\u1ee5 th\u1ec3: aaaaaaaaaaaaaaaaaa &middot; T\u00ean ch\u1ee7 nh\u00e0/ T\u00ean ng\u01b0\u1eddi m\u00f4i gi\u1edbi: Naruto &middot; S\u1ed1 \u0111i\u1ec7n tho\u1ea1i: 0773314405 &middot; Gi\u00e1 thu\u00ea bao g\u1ed3m thu\u1ebf ph\u1ea3i tr\u1ea3 (VN\u0110): 100000 &middot; Chi\u1ec1u ngang m\u1eb7t ti\u1ec1n (m): 20 &middot; T\u1ed5ng Di\u1ec7n t\u00edch kinh doanh (m2): 50 &middot; K\u1ebft c\u1ea5u nh\u00e0: \u0110\u1ea5t tr\u1ed1ng &middot; CP c\u1ea3i t\u1ea1o d\u1ef1 ki\u1ebfn (VN\u0110): 3.500.000 &middot; C\u1ea7n \u0111\u1ea1t \u00cdT NH\u1ea4T 1 trong c\u00e1c ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn: S\u1ed1 l\u01b0\u1ee3ng \u0111\u1ed1i th\u1ee7 ch\u0103n ga/n\u1ec7m/n\u1ed9i th\u1ea5t tr\u00ean tr\u1ee5c \u0111\u01b0\u1eddng b\u00e1n k\u00ednh 1km \u22658 &middot; C\u1ea7n \u0111\u1ea1t T\u1ea4T C\u1ea2 ti\u00eau ch\u00ed v\u1ecb tr\u00ed: N\u1eb1m trong gi\u00e1 thu\u00ea cho ph\u00e9p (3 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn: 80-90tr/2 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn: 60-80tr/1 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn \u226450tr) &middot; LO\u1ea0I n\u1ebfu c\u00f3 M\u1ed8T ti\u00eau ch\u00ed li\u1ec7t: \u22653 ch\u01b0\u1edbng ng\u1ea1i tr\u01b0\u1edbc c\u1eeda h\u00e0ng (C\u00e2y xanh/c\u1ed9t \u0111i\u1ec7n/c\u00f4ng tr\u00ecnh x\u00e2y d\u1ef1ng/n\u1eb1m tr\u00ean t\u1ea7ng 2) &middot; Ti\u00eau ch\u00ed \u01b0u ti\u00ean: Tr\u1ef1c di\u1ec7n ho\u1eb7c c\u00e1ch ng\u00e3 3/ng\u00e3 4/v\u00f2ng xuy\u1ebfn \u2264 50m &middot; Ti\u00eau ch\u00ed tr\u1eeb \u0111i\u1ec3m: C\u00e1ch v\u1ecb tr\u00ed quay \u0111\u1ea7u \u226520m tr\u00ean \u0111\u01b0\u1eddng c\u00f3 gi\u1ea3i ph\u00e2n c\u00e1ch c\u1ee9ng &middot; Ghi ch\u00fa: meomew &middot; 1. S\u1ed1 l\u01b0\u1ee3ng h\u1ed9 d\u00e2n trong b\u00e1n k\u00ednh 1km: 33222 &middot; K\u1ebft lu\u1eadn: S\u1ed1 l\u01b0\u1ee3ng h\u1ed9 d\u00e2n trong b\u00e1n k\u00ednh 1km: \u0110\u1ea1t &middot; 2. S\u1ed1 l\u01b0\u1ee3ng \u0110TCT ch\u0103n ga, \u0111\u1ec7m, n\u1ed9i th\u1ea5t tr\u00ean c\u00f9ng tr\u1ee5c \u0111\u01b0\u1eddng trong b\u00e1n k\u00ednh 1km: 32 &middot; K\u1ebft lu\u1eadn: S\u1ed1 l\u01b0\u1ee3ng \u0110TCT: \u0110\u1ea1t &middot; 3. N\u1eb1m trong khu v\u1ef1c CBD th\u00e0nh ph\u1ed1: C\u00f3 &middot; 4. S\u1ed1 l\u01b0\u1ee3ng c\u0103n h\u1ed9 c\u1ee7a c\u00e1c d\u1ef1 \u00e1n s\u1eafp b\u00e0n giao trong 2km &gt;= 6000 c\u0103n: 87 &middot; 5. S\u1ed1 l\u01b0\u1ee3ng h\u1ed9 d\u00e2n trong b\u00e1n k\u00ednh 2km: 111 &middot; 6. Kho\u1ea3ng c\u00e1ch \u0111\u1ebfn c\u1eeda h\u00e0ng Vuanem g\u1ea7n nh\u1ea5t: Kh\u00f4ng c\u00f3 &middot; K\u1ebeT LU\u1eacN 1: \u0110\u1ea1t 1/4 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn &middot; \u0110\u1ec0 XU\u1ea4T: N\u00ean m\u1edf c\u1eeda h\u00e0ng &middot; M\u1eb7t ti\u1ec1n: \u0110\u1ea1t &middot; H\u00ecnh d\u1ea1ng nh\u00e0, c\u1ea5u tr\u00fac nh\u00e0, kh\u1ea3 n\u0103ng x\u00e2y s\u1eeda c\u1ea3i t\u1ea1o: \u0110\u1ea1t &middot; Tr\u1ef1c ti\u1ebfp quan s\u00e1t m\u1eadt \u0111\u1ed9 d\u00e2n c\u01b0: \u0110\u1ea1t &middot; Nh\u1eadn di\u1ec7n c\u1eeda h\u00e0ng (\u0111\u1ed1i th\u1ee7, thu nh\u1eadp c\u1ee7a d\u00e2n c\u01b0): \u0110\u1ea1t &middot; Ti\u00eau ch\u00ed \u0111i\u1ec3m li\u1ec7t: C\u00f3 &middot; Ghi ch\u00fa: Meow &middot; K\u1ebft lu\u1eadn: \u0110\u1ed3ng \u00fd \u0111\u00e0m ph\u00e1n &middot; Gi\u00e1 thu\u00ea ch\u01b0a bao g\u1ed3m thu\u1ebf ph\u1ea3i tr\u1ea3 (VN\u0110/th\u00e1ng): 22222 &middot; Gi\u00e1 thu\u00ea bao g\u1ed3m thu\u1ebf ph\u1ea3i tr\u1ea3 (VN\u0110/th\u00e1ng): 2222222 &middot; \u0110i\u1ec1u kho\u1ea3n t\u0103ng gi\u00e1: safdasdasd &middot; S\u1ed1 th\u00e1ng c\u1ecdc: 222 &middot; S\u1ed1 th\u00e1ng tr\u1ea3 tr\u01b0\u1edbc: 2222222 &middot; Th\u1eddi h\u1ea1n h\u1ee3p \u0111\u1ed3ng (th\u00e1ng): 222 &middot; Th\u1eddi gian s\u1eeda ch\u1eefa mi\u1ec5n ph\u00ed: 2 &middot; \u0110\u01a1n ph\u01b0\u01a1ng \u0111\u00ecnh ch\u1ec9 h\u1ee3p \u0111\u1ed3ng: M\u1ea5t c\u1ecdc &middot; Ghi ch\u00fa: ADSASDASD &middot; K\u00fd H\u1ee3p \u0111\u1ed3ng: 14/01/2021 &middot; Nh\u1eadn m\u1eb7t b\u1eb1ng t\u1eeb ch\u1ee7 nh\u00e0: 12/01/2021 &middot; B\u00e0n giao m\u1eb7t b\u1eb1ng s\u1ea1ch: 06/01/2021 &middot; Ng\u00e0y khai tr\u01b0\u01a1ng d\u1ef1 ki\u1ebfn: 20/01/2021 &middot; ", "content": "<p>asdasdasasd</p>", "color": 3, "owners": [], "followers": ["hungnguyen2", "anhphung", "tungnguyen", "", "binhnguyen", "hanguyen7"], "since": 1610092029, "last_update": 1610092252, "finish_at": 1610092252, "results": [], "stage_id": 31211, "stage_export": {"id": 31211, "name": "Failed", "metatype": "failed", "workflow_id": 4735, "type": "workflowstages"}, "stats": {"notes": 0, "posts": 1, "files": 0, "likes": 0}, "user_id": 152945, "username": "tungnguyen", "todos": [{"id": 517149, "name": "G\u0110KD \u0111\u00e3 x\u00e1c nh\u1eadn H\u0110", "status": 1, "stage_id": 31216, "deadline": 0, "username": "tungnguyen", "type": "workflowtodos", "link": "base-workflow://todos?todo=517149"}, {"id": 517143, "name": "\u0110\u00e3 \u0111\u00ednh k\u00e8m \u1ea3nh qu\u00e9t \u0111\u1ecbnh tuy\u1ebfn", "status": 1, "stage_id": 31213, "deadline": 0, "username": "hungnguyen2", "type": "workflowtodos", "link": "base-workflow://todos?todo=517143"}, {"id": 517139, "name": "\u0110\u00e3 \u0111\u00ednh k\u00e8m \u1ea3nh m\u1eb7t b\u1eb1ng", "status": 1, "stage_id": 31212, "deadline": 0, "username": "tungnguyen", "type": "workflowtodos", "link": "base-workflow://todos?todo=517139"}], "creator_id": 152946, "creator_username": "anhphung", "deadline": 0, "stage_deadline": 1610178506, "stage_start": 1610092117, "workflow_id": 4735, "workflow_export": {"id": 4735, "name": "Test 1 - M\u1eb7t b\u1eb1ng HN/HCM (Copy)", "type": "workflows"}, "moves": [{"id": 814518, "user_id": 152945, "mover_id": 152946, "job_id": 207916, "stage_id": 31212, "stage_start": 1610092029, "stage_deadline": 1610351229, "from_stage_id": 0, "duration": 259200, "past": 1, "stage_end": 1610092040}, {"id": 814523, "user_id": 152950, "mover_id": 152946, "job_id": 207916, "stage_id": 31213, "stage_start": 1610092040, "stage_deadline": 1610351240, "from_stage_id": 31212, "duration": 259200, "past": 1, "stage_end": 1610092069}, {"id": 814528, "user_id": 0, "mover_id": 152946, "job_id": 207916, "stage_id": 31214, "stage_start": 1610092068, "stage_deadline": 1610178468, "from_stage_id": 31213, "duration": 86400, "past": 1, "stage_end": 1610092086}, {"id": 814532, "user_id": 152955, "mover_id": 152946, "job_id": 207916, "stage_id": 31217, "stage_start": 1610092086, "stage_deadline": 1610120886, "from_stage_id": 31214, "duration": 28800, "past": 1, "stage_end": 1610092090}, {"id": 814534, "user_id": 152954, "mover_id": 152946, "job_id": 207916, "stage_id": 31215, "stage_start": 1610092090, "stage_deadline": 1611042490, "from_stage_id": 31217, "duration": 950400, "past": 1, "stage_end": 1610092106}, {"id": 814537, "user_id": 152945, "mover_id": 152946, "job_id": 207916, "stage_id": 31216, "stage_start": 1610092106, "stage_deadline": 1610178506, "from_stage_id": 31215, "duration": 86400, "past": 1, "stage_end": 1610092117}, {"id": 814541, "user_id": 152945, "mover_id": 152946, "job_id": 207916, "stage_id": 31210, "stage_start": 1610092117, "stage_deadline": 1610178506, "from_stage_id": 31216, "duration": 86389, "past": 1, "stage_end": 1610092252}, {"id": 814572, "user_id": 152945, "mover_id": 152946, "job_id": 207916, "stage_id": 31211, "stage_start": 1610092117, "stage_deadline": 1610178506, "from_stage_id": 31210, "duration": 86389}], "acl": {}, "files": [], "form": [{"id": "loai_cua_hang", "name": "Lo\u1ea1i c\u1eeda h\u00e0ng", "value": "M\u1eb7t ph\u1ed1 HN/HCM", "type": "select", "placeholder": ""}, {"id": "vi_tri_tren_map", "name": "V\u1ecb tr\u00ed tr\u00ean map/ \u0110\u1ecba ch\u1ec9 c\u1ee5 th\u1ec3", "value": "aaaaaaaaaaaaaaaaaa", "type": "textarea", "placeholder": ""}, {"id": "ten_chu_nha_ten_nguoi_moi_gioi", "name": "T\u00ean ch\u1ee7 nh\u00e0/ T\u00ean ng\u01b0\u1eddi m\u00f4i gi\u1edbi", "value": "Naruto", "type": "text", "placeholder": ""}, {"id": "so_dien_thoai", "name": "S\u1ed1 \u0111i\u1ec7n tho\u1ea1i", "value": "0773314405", "type": "text", "placeholder": ""}, {"id": "gia_thue_bao_gom_thue_phai_tra_v", "name": "Gi\u00e1 thu\u00ea bao g\u1ed3m thu\u1ebf ph\u1ea3i tr\u1ea3 (VN\u0110)", "value": 100000, "type": "int", "placeholder": ""}, {"id": "chieu_ngang_mat_tien", "name": "Chi\u1ec1u ngang m\u1eb7t ti\u1ec1n (m)", "value": 20, "type": "int", "placeholder": ""}, {"id": "tong_dien_tich_kinh_doanh", "name": "T\u1ed5ng Di\u1ec7n t\u00edch kinh doanh (m2)", "value": 50, "type": "int", "placeholder": ""}, {"id": "ket_cau_nha", "name": "K\u1ebft c\u1ea5u nh\u00e0", "value": "\u0110\u1ea5t tr\u1ed1ng", "type": "select", "placeholder": ""}, {"id": "cp_cai_tao_du_kien", "name": "CP c\u1ea3i t\u1ea1o d\u1ef1 ki\u1ebfn (VN\u0110)", "value": "3.500.000", "type": "select", "placeholder": ""}, {"id": "ZZJ6WGXBHNC98P553BMFX6DN87LAW4DP", "name": "C\u1ea7n \u0111\u1ea1t \u00cdT NH\u1ea4T 1 trong c\u00e1c ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn", "value": "S\u1ed1 l\u01b0\u1ee3ng \u0111\u1ed1i th\u1ee7 ch\u0103n ga/n\u1ec7m/n\u1ed9i th\u1ea5t tr\u00ean tr\u1ee5c \u0111\u01b0\u1eddng b\u00e1n k\u00ednh 1km \u22658", "type": "select-m", "placeholder": ""}, {"id": "SQNB9FGDUBB3RTAHVLGFMJGKCQJHFK7R", "name": "C\u1ea7n \u0111\u1ea1t T\u1ea4T C\u1ea2 ti\u00eau ch\u00ed v\u1ecb tr\u00ed", "value": "N\u1eb1m trong gi\u00e1 thu\u00ea cho ph\u00e9p (3 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn: 80-90tr/2 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn: 60-80tr/1 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn \u226450tr)", "type": "select-m", "placeholder": ""}, {"id": "FVGQ3MYFCNYDMZ3YVHFX468VMTGWT6PJ", "name": "LO\u1ea0I n\u1ebfu c\u00f3 M\u1ed8T ti\u00eau ch\u00ed li\u1ec7t", "value": "\u22653 ch\u01b0\u1edbng ng\u1ea1i tr\u01b0\u1edbc c\u1eeda h\u00e0ng (C\u00e2y xanh/c\u1ed9t \u0111i\u1ec7n/c\u00f4ng tr\u00ecnh x\u00e2y d\u1ef1ng/n\u1eb1m tr\u00ean t\u1ea7ng 2)", "type": "select-m", "placeholder": ""}, {"id": "NTXEKZV6TFVAE8FP4ZMMS6HG28WEK7VY", "name": "Ti\u00eau ch\u00ed \u01b0u ti\u00ean", "value": "Tr\u1ef1c di\u1ec7n ho\u1eb7c c\u00e1ch ng\u00e3 3/ng\u00e3 4/v\u00f2ng xuy\u1ebfn \u2264 50m", "type": "select-m", "placeholder": ""}, {"id": "SUQQH3KAL2J3QZT6CM94BM234A8N3TQB", "name": "Ti\u00eau ch\u00ed tr\u1eeb \u0111i\u1ec3m", "value": "C\u00e1ch v\u1ecb tr\u00ed quay \u0111\u1ea7u \u226520m tr\u00ean \u0111\u01b0\u1eddng c\u00f3 gi\u1ea3i ph\u00e2n c\u00e1ch c\u1ee9ng", "type": "select-m", "placeholder": ""}, {"id": "ghi_chu", "name": "Ghi ch\u00fa", "value": "meomew", "type": "textarea", "placeholder": ""}, {"id": "households_1km", "name": "1. S\u1ed1 l\u01b0\u1ee3ng h\u1ed9 d\u00e2n trong b\u00e1n k\u00ednh 1km", "value": 33222, "type": "int", "placeholder": ""}, {"id": "ket_luan_households_1km", "name": "K\u1ebft lu\u1eadn: S\u1ed1 l\u01b0\u1ee3ng h\u1ed9 d\u00e2n trong b\u00e1n k\u00ednh 1km", "value": "\u0110\u1ea1t", "type": "select", "placeholder": ""}, {"id": "dtct", "name": "2. S\u1ed1 l\u01b0\u1ee3ng \u0110TCT ch\u0103n ga, \u0111\u1ec7m, n\u1ed9i th\u1ea5t tr\u00ean c\u00f9ng tr\u1ee5c \u0111\u01b0\u1eddng trong b\u00e1n k\u00ednh 1km", "value": 32, "type": "int", "placeholder": ""}, {"id": "ket_luan_dtct", "name": "K\u1ebft lu\u1eadn: S\u1ed1 l\u01b0\u1ee3ng \u0110TCT", "value": "\u0110\u1ea1t", "type": "select", "placeholder": ""}, {"id": "cbd", "name": "3. N\u1eb1m trong khu v\u1ef1c CBD th\u00e0nh ph\u1ed1", "value": "C\u00f3", "type": "select", "placeholder": ""}, {"id": "can_ho_ban_giao", "name": "4. S\u1ed1 l\u01b0\u1ee3ng c\u0103n h\u1ed9 c\u1ee7a c\u00e1c d\u1ef1 \u00e1n s\u1eafp b\u00e0n giao trong 2km &gt;= 6000 c\u0103n", "value": 87, "type": "int", "placeholder": ""}, {"id": "households_2km", "name": "5. S\u1ed1 l\u01b0\u1ee3ng h\u1ed9 d\u00e2n trong b\u00e1n k\u00ednh 2km", "value": 111, "type": "int", "placeholder": ""}, {"id": "khoang_cach_vn_gan_nhat", "name": "6. Kho\u1ea3ng c\u00e1ch \u0111\u1ebfn c\u1eeda h\u00e0ng Vuanem g\u1ea7n nh\u1ea5t", "value": "Kh\u00f4ng c\u00f3", "type": "select", "placeholder": ""}, {"id": "ket_luan_1", "name": "K\u1ebeT LU\u1eacN 1", "value": "\u0110\u1ea1t 1/4 ti\u00eau ch\u00ed \u0111\u1ecbnh tuy\u1ebfn", "type": "select", "placeholder": ""}, {"id": "de_xuat", "name": "\u0110\u1ec0 XU\u1ea4T", "value": "N\u00ean m\u1edf c\u1eeda h\u00e0ng", "type": "select", "placeholder": ""}, {"id": "dieu_kien_mo_cua_hang", "name": "\u0110i\u1ec1u ki\u1ec7n m\u1edf c\u1eeda h\u00e0ng", "value": "", "type": "text", "placeholder": ""}, {"id": "mat_tien", "name": "M\u1eb7t ti\u1ec1n", "value": "\u0110\u1ea1t", "type": "select", "placeholder": ""}, {"id": "hinh_dang_nha_cau_truc_nha_kha_n", "name": "H\u00ecnh d\u1ea1ng nh\u00e0, c\u1ea5u tr\u00fac nh\u00e0, kh\u1ea3 n\u0103ng x\u00e2y s\u1eeda c\u1ea3i t\u1ea1o", "value": "\u0110\u1ea1t", "type": "select", "placeholder": ""}, {"id": "truc_tiep_quan_sat_mat_do_dan_cu", "name": "Tr\u1ef1c ti\u1ebfp quan s\u00e1t m\u1eadt \u0111\u1ed9 d\u00e2n c\u01b0", "value": "\u0110\u1ea1t", "type": "select", "placeholder": ""}, {"id": "nhan_dien_cua_hang_doi_thu_thu_n", "name": "Nh\u1eadn di\u1ec7n c\u1eeda h\u00e0ng (\u0111\u1ed1i th\u1ee7, thu nh\u1eadp c\u1ee7a d\u00e2n c\u01b0)", "value": "\u0110\u1ea1t", "type": "select", "placeholder": ""}, {"id": "tieu_chi_diem_liet", "name": "Ti\u00eau ch\u00ed \u0111i\u1ec3m li\u1ec7t", "value": "C\u00f3", "type": "select", "placeholder": ""}, {"id": "HKJQC8DDTXYVUHXZ3HRHP5E3W9ZNPLJN", "name": "Ghi ch\u00fa", "value": "Meow", "type": "text", "placeholder": ""}, {"id": "ket_luan", "name": "K\u1ebft lu\u1eadn", "value": "\u0110\u1ed3ng \u00fd \u0111\u00e0m ph\u00e1n", "type": "select", "placeholder": ""}, {"id": "gia_thue_chua_bao_gom_thue_phai_", "name": "Gi\u00e1 thu\u00ea ch\u01b0a bao g\u1ed3m thu\u1ebf ph\u1ea3i tr\u1ea3 (VN\u0110/th\u00e1ng)", "value": 22222, "type": "int", "placeholder": ""}, {"id": "LXFTYXNTML64TW7RWUYQPMZC73USX2KQ", "name": "Gi\u00e1 thu\u00ea bao g\u1ed3m thu\u1ebf ph\u1ea3i tr\u1ea3 (VN\u0110/th\u00e1ng)", "value": 2222222, "type": "int", "placeholder": ""}, {"id": "dieu_khoan_tang_gia", "name": "\u0110i\u1ec1u kho\u1ea3n t\u0103ng gi\u00e1", "value": "safdasdasd", "type": "text", "placeholder": ""}, {"id": "so_thang_coc", "name": "S\u1ed1 th\u00e1ng c\u1ecdc", "value": 222, "type": "int", "placeholder": ""}, {"id": "so_thang_tra_truoc", "name": "S\u1ed1 th\u00e1ng tr\u1ea3 tr\u01b0\u1edbc", "value": 2222222, "type": "int", "placeholder": ""}, {"id": "thoi_han_hop_dong_thang", "name": "Th\u1eddi h\u1ea1n h\u1ee3p \u0111\u1ed3ng (th\u00e1ng)", "value": 222, "type": "int", "placeholder": ""}, {"id": "thoi_gian_sua_chua_mien_phi", "name": "Th\u1eddi gian s\u1eeda ch\u1eefa mi\u1ec5n ph\u00ed", "value": 2, "type": "text", "placeholder": ""}, {"id": "don_phuong_dinh_chi_hop_dong", "name": "\u0110\u01a1n ph\u01b0\u01a1ng \u0111\u00ecnh ch\u1ec9 h\u1ee3p \u0111\u1ed3ng", "value": "M\u1ea5t c\u1ecdc", "type": "select", "placeholder": ""}, {"id": "SUJ4NM9GKASBPEQ9G29JM98VHMXMMYX6", "name": "Ghi ch\u00fa", "value": "ADSASDASD", "type": "textarea", "placeholder": ""}, {"id": "ky_hop_dong", "name": "K\u00fd H\u1ee3p \u0111\u1ed3ng", "value": "01/14/2021", "type": "date", "placeholder": ""}, {"id": "nhan_mat_bang_tu_chu_nha", "name": "Nh\u1eadn m\u1eb7t b\u1eb1ng t\u1eeb ch\u1ee7 nh\u00e0", "value": "01/12/2021", "type": "date", "placeholder": ""}, {"id": "ban_giao_mat_bang_sach", "name": "B\u00e0n giao m\u1eb7t b\u1eb1ng s\u1ea1ch", "value": "01/06/2021", "type": "date", "placeholder": ""}, {"id": "ngay_khai_truong_du_kien", "name": "Ng\u00e0y khai tr\u01b0\u01a1ng d\u1ef1 ki\u1ebfn", "value": "01/20/2021", "type": "date", "placeholder": ""}], "on_failed": {"stage_id": 31210, "failed_reason_id": "lcprmwcydwjlfdlcqukulecxvwwerhkz", "failed_name": "Ch\u1ee7 nh\u00e0 cho b\u00ean kh\u00e1c thu\u00ea", "note": "", "since": 1610092252}, "tags": [], "data": {"deadline_by_timesheet": 0, "first_assignee": 152945, "last_assignee": 152945}, "keyword": "207916test1nguyenhuutungtungnguyenloaicuahangmatphohnhcmvitritrenmapdiachicutheaaaaaaaaaaaaaaaaaatenchunhatennguoimoigioinarutosodienthoai0773314405giathuebaogomthuephaitravnd100000chieungangmattienm20tongdientichkinhdoanhm250ketcaunhadattrongcpcaitaodukienvnd3.500.000candatitnhat1trongcactieuchidinhtuyensoluongdoithuchanganemnoithattrentrucduongbankinh1km8candattatcatieuchivitrinamtronggiathuechophep3tieuchidinhtuyen8090tr2tieuchidinhtuyen6080tr1tieuchidinhtuyen50trloaineucomottieuchiliet3chuongngaitruoccuahangcayxanhcotdiencongtrinhxaydungnamtrentang2tieuchiuutientrucdienhoaccachnga3nga4vongxuyen50mtieuchitrudiemcachvitriquaydau20mtrenduongcogiaiphancachcungghichumeomew1.soluonghodantrongbankinh1km33222ketluansoluonghodantrongbankinh1kmdat2.soluongdtctchangademnoithattrencungtrucduongtrongbankinh1km32ketluansoluongdtctdat3.namtrongkhuvuccbdthanhphoco4.soluongcanhocuacacduansapbangiaotrong2km6000can875.soluonghodantrongbankinh2km1116.khoangcachdencuahangvuanemgannhatkhongcoketluan1dat14tieuchidinhtuyendexuatnenmocuahangmattiendathinhdangnhacautrucnhakhanangxaysuacaitaodattructiepquansatmatdodancudatnhandiencuahangdoithuthunhapcuadancudattieuchidiemlietcoghichumeowketluandongydamphangiathuechuabaogomthuephaitravndthang22222giathuebaogomthuephaitravndthang2222222dieukhoantanggiasafdasdasdsothangcoc222sothangtratruoc2222222thoihanhopdongthang222thoigiansuachuamienphi2donphuongdinhchihopdongmatcocghichuadsasdasdkyhopdong14012021nhanmatbangtuchunha12012021bangiaomatbangsach06012021ngaykhaitruongdukien20012021chunhachobenkhacthueasdasdasasd", "deadline_by_timesheet": 0, "first_assignee": 152945}]
