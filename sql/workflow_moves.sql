@@ -1,5 +1,4 @@
 SELECT
-    wf.id AS workflow_id,
     moves.id,
     moves.user_id,
     moves.mover_id,
@@ -12,5 +11,5 @@ SELECT
     moves.past,
     moves.stage_end
 FROM
-    `voltaic-country-280607.Basevn.workflow_core` wf,
+    `voltaic-country-280607.Basevn.workflow` wf,
     UNNEST(moves) AS moves
