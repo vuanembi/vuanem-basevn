@@ -52,13 +52,6 @@ def get_workflow_stages_dim(result):
     stages = [i.get('stages') for i in result.get('workflows')]
     stages = list(itertools.chain(*stages))
     stages = transform_json_type(stages)
-    '''
-    with open(f'flows.json', 'w') as f:
-        json.dump(stages, f)
-    '''
-    job_config = bigquery.job.LoadJobConfig(
-        write_disposition='WRITE_TRUNCATE'
-    )
     errors = client.insert_rows_json(
         'Basevn.dim_workflow_stages',
         stages
@@ -70,7 +63,8 @@ def transform_forms_dates(job):
     forms = job.get('form')
     for form in forms:
         if form.get('type') == 'date':
-            form['value'] = datetime.strftime(datetime.strptime(form.get('value'), '%d/%m/%Y'), '%m/%d/%Y')
+            form['value'] = datetime.strftime(datetime.strptime(
+                form.get('value'), '%d/%m/%Y'), '%m/%d/%Y')
     return job
 
 
@@ -98,13 +92,10 @@ async def get_workflow_jobs(ids):
                         jobs,
                         ignore_unknown_values=True
                     )
-                    '''
-                    with open(f'export/{id}.json', 'a') as f:
-                        json.dump(jobs, f)
-                    '''
                     page_id = page_id + 1
                 elif len(jobs) == 0:
                     jobs_done = True
+
 
 def truncate_table():
     tables = ['Basevn.workflow', 'Basevn.dim_workflow_stages']
@@ -112,6 +103,7 @@ def truncate_table():
         client.query(f'''
                      TRUNCATE TABLE `voltaic-country-280607.{i}`
                      ''')
+
 
 async def main():
     truncate_table()
