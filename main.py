@@ -4,7 +4,6 @@ import requests
 from datetime import datetime
 import time
 import os
-from tqdm.asyncio import tqdm, trange
 from google.cloud import bigquery
 import json
 import itertools
