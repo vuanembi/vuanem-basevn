@@ -201,4 +201,4 @@ def main(request=''):
     asyncio.run(run())
     end = time.time()
     send_telegram('Basevn ran for ' + str(round(end - start, 2)))
-    return 'ok'
+    return str(round(end - start, 2))
