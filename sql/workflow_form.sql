@@ -6,5 +6,5 @@ SELECT
     form.type,
     form.placeholder
 FROM
-    `voltaic-country-280607.Basevn.workflow` wf,
+    `voltaic-country-280607.Basevn._workflow_latest` wf,
     UNNEST(form) AS form

@@ -11,5 +11,5 @@ SELECT
     moves.past,
     moves.stage_end
 FROM
-    `voltaic-country-280607.Basevn.workflow` wf,
+    `voltaic-country-280607.Basevn._workflow_latest` wf,
     UNNEST(moves) AS moves

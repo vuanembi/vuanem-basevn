@@ -6,4 +6,4 @@ SELECT
     last_update,
     on_failed
 FROM
-    `voltaic-country-280607.Basevn.workflow` AS wf
+    `voltaic-country-280607.Basevn._workflow_latest` AS wf
