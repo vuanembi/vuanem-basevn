@@ -140,3 +140,5 @@ cython_debug/
 #
 export/
 .vscode
+.DS_store
+voltaic-country-280607-ea3eb5348029.json
