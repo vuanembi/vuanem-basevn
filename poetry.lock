@@ -174,6 +174,19 @@ google-auth = ">=1.24.0,<3.0dev"
 grpc = ["grpcio (>=1.8.2,<2.0dev)"]
 
 [[package]]
+name = "google-cloud-tasks"
+version = "2.7.1"
+description = "Cloud Tasks API API client library"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+google-api-core = {version = ">=1.28.0,<3.0.0dev", extras = ["grpc"]}
+grpc-google-iam-v1 = ">=0.12.3,<0.13dev"
+proto-plus = ">=0.4.0"
+
+[[package]]
 name = "google-crc32c"
 version = "1.3.0"
 description = "A python wrapper of the C library 'Google CRC32C'"
@@ -208,10 +221,23 @@ optional = false
 python-versions = ">=3.6"
 
 [package.dependencies]
+grpcio = {version = ">=1.0.0", optional = true, markers = "extra == \"grpc\""}
 protobuf = ">=3.12.0"
 
 [package.extras]
 grpc = ["grpcio (>=1.0.0)"]
+
+[[package]]
+name = "grpc-google-iam-v1"
+version = "0.12.3"
+description = "GRPC library for the google-iam-v1 service"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+googleapis-common-protos = {version = ">=1.5.2,<2.0.0dev", extras = ["grpc"]}
+grpcio = ">=1.0.0,<2.0.0dev"
 
 [[package]]
 name = "grpcio"
@@ -520,7 +546,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "~3.9"
-content-hash = "a9811fd44b16c1c108e1a8084f3d0dabdaa69389724ab8dc82ebdc74816860b8"
+content-hash = "3251e3f7848fd4f693a4bd5bb9548fda15055694761b767e7afd9fe4eb2a7820"
 
 [metadata.files]
 atomicwrites = [
@@ -570,6 +596,10 @@ google-cloud-bigquery = [
 google-cloud-core = [
     {file = "google-cloud-core-2.2.1.tar.gz", hash = "sha256:476d1f71ab78089e0638e0aaf34bfdc99bab4fce8f4170ba6321a5243d13c5c7"},
     {file = "google_cloud_core-2.2.1-py2.py3-none-any.whl", hash = "sha256:ab6cee07791afe4e210807ceeab749da6a076ab16d496ac734bf7e6ffea27486"},
+]
+google-cloud-tasks = [
+    {file = "google-cloud-tasks-2.7.1.tar.gz", hash = "sha256:2fd2222901a7d8ba65f28f9019cb41f5d4c952d012f020bdde105527a3f5ae43"},
+    {file = "google_cloud_tasks-2.7.1-py2.py3-none-any.whl", hash = "sha256:29027e64800725e74f052fe86f769678c4f158ad4d90a3a49d1c40589f316291"},
 ]
 google-crc32c = [
     {file = "google-crc32c-1.3.0.tar.gz", hash = "sha256:276de6273eb074a35bc598f8efbc00c7869c5cf2e29c90748fccc8c898c244df"},
@@ -623,6 +653,9 @@ google-resumable-media = [
 googleapis-common-protos = [
     {file = "googleapis-common-protos-1.53.0.tar.gz", hash = "sha256:a88ee8903aa0a81f6c3cec2d5cf62d3c8aa67c06439b0496b49048fb1854ebf4"},
     {file = "googleapis_common_protos-1.53.0-py2.py3-none-any.whl", hash = "sha256:f6d561ab8fb16b30020b940e2dd01cd80082f4762fa9f3ee670f4419b4b8dbd0"},
+]
+grpc-google-iam-v1 = [
+    {file = "grpc-google-iam-v1-0.12.3.tar.gz", hash = "sha256:0bfb5b56f648f457021a91c0df0db4934b6e0c300bd0f2de2333383fe958aa72"},
 ]
 grpcio = [
     {file = "grpcio-1.42.0-cp310-cp310-linux_armv7l.whl", hash = "sha256:6e5eec67909795f7b1ff2bd941bd6c2661ca5217ea9c35003d73314100786f60"},

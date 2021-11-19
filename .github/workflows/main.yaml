@@ -8,6 +8,7 @@ env:
   FUNCTION_NAME: vuanem_basevn
   PROJECT_ID: voltaic-country-280607
   GCP_SA: bivuanem@voltaic-country-280607.iam.gserviceaccount.com
+  PUBLIC_URL: https://us-central1-voltaic-country-280607.cloudfunctions.net/vuanem_basevn
 
 jobs:
   deploy:
@@ -33,4 +34,4 @@ jobs:
           --runtime=python39
           --trigger-http
           --service-account=${{ env.GCP_SA }}
-          --set-env-vars=WEWORK_TOKEN=${{ secrets.WEWORK_TOKEN }},WORKFLOW_TOKEN=${{ secrets.WORKFLOW_TOKEN }}
+          --set-env-vars=WEWORK_TOKEN=${{ secrets.WEWORK_TOKEN }},WORKFLOW_TOKEN=${{ secrets.WORKFLOW_TOKEN }},PUBLIC_URL=${{ env.PUBLIC_URL }},GCP_SA=${{ env.GCP_SA }}
