@@ -1,3 +1,5 @@
+import json
+
 from models.base import Basevn
 from libs.workflow import get_jobs
 
@@ -25,7 +27,7 @@ Jobs: Basevn = {
             }
             if row.get("stage_export", {})
             else {},
-            "user_id": row.get("user_id"),
+            "user_id": json.dumps(row.get("user_id")),
             "username": row.get("username"),
             "todos": [
                 {
@@ -58,7 +60,7 @@ Jobs: Basevn = {
             "moves": [
                 {
                     "id": move.get("id"),
-                    "user_id": move.get("user_id"),
+                    "user_id": json.dumps(move.get("user_id")),
                     "mover_id": move.get("mover_id"),
                     "job_id": move.get("job_id"),
                     "stage_id": move.get("stage_id"),
@@ -83,7 +85,6 @@ Jobs: Basevn = {
                     "required": form.get("required"),
                     "options": form.get("options"),
                     "stage_id": form.get("stage_id"),
-                    "stage_index": form.get("stage_index"),
                     "value": form.get("value"),
                     "display": form.get("display"),
                 }
@@ -185,7 +186,7 @@ Jobs: Basevn = {
                 {"name": "type", "type": "STRING"},
                 {"name": "placeholder", "type": "STRING"},
                 {"name": "enabled", "type": "INTEGER"},
-                {"name": "required", "type": "STRING"},
+                {"name": "required", "type": "INTEGER"},
                 {"name": "options", "type": "STRING", "mode": "repeated"},
                 {"name": "stage_id", "type": "STRING"},
                 {"name": "value", "type": "STRING"},
