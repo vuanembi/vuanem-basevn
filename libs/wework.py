@@ -35,10 +35,11 @@ def get_projects_details(session: requests.Session):
     ]
     return [
         {
-            "projects": [project["project"] for project in project_details],
-            "tasklists": [project["tasklists"] for project in project_details],
-            "tasks": [project["tasks"] for project in project_details],
-            "subtasks": [project["subtasks"] for project in project_details],
-            "milestones": [project["milestones"] for project in project_details],
+            "project": project["project"],
+            "tasklists": project["tasklists"],
+            "tasks": project["tasks"],
+            "subtasks": project["subtasks"],
+            "milestones": project["milestones"],
         }
+        for project in project_details
     ]
