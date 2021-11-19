@@ -1,3 +1,5 @@
+import json
+
 from models.base import Basevn
 from libs.workflow import get_workflows
 
@@ -20,9 +22,9 @@ Workflows: Basevn = {
                     "owners": stage.get("owners"),
                     "followers": stage.get("followers"),
                 }
-                for stage in row["stage"]
+                for stage in row["stages"]
             ]
-            if row.get("stage", [])
+            if row.get("stages", [])
             else [],
             "failed_reasons": [
                 {
@@ -42,7 +44,7 @@ Workflows: Basevn = {
                     "enabled": form.get("enabled"),
                     "required": form.get("required"),
                     "options": form.get("options"),
-                    "stage_id": form.get("stage_id"),
+                    "stage_id": json.dumps(form.get("stage_id")),
                 }
                 for form in row["form"]
             ]
@@ -96,7 +98,7 @@ Workflows: Basevn = {
                 {"name": "type", "type": "STRING"},
                 {"name": "placeholder", "type": "STRING"},
                 {"name": "enabled", "type": "INTEGER"},
-                {"name": "required", "type": "STRING"},
+                {"name": "required", "type": "INTEGER"},
                 {"name": "options", "type": "STRING", "mode": "repeated"},
                 {"name": "stage_id", "type": "STRING"},
             ],
@@ -105,9 +107,9 @@ Workflows: Basevn = {
             "name": "stats",
             "type": "record",
             "fields": [
-                {"name": "done", "type": "STRING"},
-                {"name": "failed", "type": "STRING"},
-                {"name": "active", "type": "STRING"},
+                {"name": "done", "type": "INTEGER"},
+                {"name": "failed", "type": "INTEGER"},
+                {"name": "active", "type": "INTEGER"},
             ],
         },
     ],

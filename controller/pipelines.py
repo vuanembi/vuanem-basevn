@@ -27,5 +27,5 @@ def run(
         "num_processed": len(data),
     }
     if len(data) > 0:
-        response["output_rows"] = load(client, dataset, model, data)
+        response["output_rows"] = load(client, dataset, model, model["transform"](data))
     return response

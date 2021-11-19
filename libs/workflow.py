@@ -12,7 +12,7 @@ def get_workflows(session: requests.Session, page: int = 0) -> list[dict]:
         f"{BASE_URL}/workflows/get",
         data={
             "access_token": os.getenv("WORKFLOW_TOKEN"),
-            "page": page,
+            "page_id": page,
         },
     ) as r:
         res = r.json()

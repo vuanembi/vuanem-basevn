@@ -22,7 +22,7 @@ def main(request) -> dict:
                 SESSION,
                 BQ_CLIENT,
                 DATASET,
-                factory(data["resouce"], data["table"]),
+                factory(data["resource"], data["table"]),
             ),
         }
         print(response)
