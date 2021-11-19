@@ -10,7 +10,7 @@ def load(client: bigquery.Client, dataset: str, model: Basevn, rows: list[dict])
             f"{dataset}.{model['name']}",
             job_config=bigquery.LoadJobConfig(
                 create_disposition="CREATE_IF_NEEDED",
-                write_disposition="WRITE_APPEND",
+                write_disposition="WRITE_TRUNCATE",
                 schema=model["schema"],
             ),
         )
