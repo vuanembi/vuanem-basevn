@@ -1,10 +1,8 @@
-import os
-import json
-
 import requests
 from google.cloud import bigquery
 
 from controller.pipelines import factory, run
+from controller.tasks import create_tasks
 
 BQ_CLIENT = bigquery.Client()
 SESSION = requests.Session()
@@ -15,7 +13,9 @@ def main(request) -> dict:
     data = request.get_json()
     print(data)
 
-    if "table" in data:
+    if "tasks" in data:
+        response = create_tasks()
+    elif "table" in data:
         response = {
             "pipelines": "Basevn",
             "results": run(
@@ -25,14 +25,7 @@ def main(request) -> dict:
                 factory(data["resource"], data["table"]),
             ),
         }
-        print(response)
-        SESSION.post(
-            f"https://api.telegram.org/bot{os.getenv('TELEGRAM_TOKEN')}/sendMessage",
-            json={
-                "chat_id": "-465061044",
-                "text": json.dumps(response, indent=4),
-            },
-        )
-        return response
     else:
         raise ValueError(data)
+    print(response)
+    return response
