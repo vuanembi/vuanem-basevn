@@ -1,6 +1,4 @@
-import json
-
-from models.base import Basevn
+from models.base import Basevn, safe_string
 from libs.workflow import get_jobs
 
 Jobs: Basevn = {
@@ -27,7 +25,7 @@ Jobs: Basevn = {
             }
             if row.get("stage_export", {})
             else {},
-            "user_id": json.dumps(row.get("user_id")),
+            "user_id": safe_string(row.get("user_id")),
             "username": row.get("username"),
             "todos": [
                 {
@@ -60,7 +58,7 @@ Jobs: Basevn = {
             "moves": [
                 {
                     "id": move.get("id"),
-                    "user_id": json.dumps(move.get("user_id")),
+                    "user_id": safe_string(move.get("user_id")),
                     "mover_id": move.get("mover_id"),
                     "job_id": move.get("job_id"),
                     "stage_id": move.get("stage_id"),

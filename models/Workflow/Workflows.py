@@ -1,6 +1,4 @@
-import json
-
-from models.base import Basevn
+from models.base import Basevn, safe_string
 from libs.workflow import get_workflows
 
 Workflows: Basevn = {
@@ -44,7 +42,7 @@ Workflows: Basevn = {
                     "enabled": form.get("enabled"),
                     "required": form.get("required"),
                     "options": form.get("options"),
-                    "stage_id": json.dumps(form.get("stage_id")),
+                    "stage_id": safe_string(form.get("stage_id")),
                 }
                 for form in row["form"]
             ]
