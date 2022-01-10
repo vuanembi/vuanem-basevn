@@ -2,7 +2,6 @@ from models.base import Basevn, safe_string
 from libs.wework import get_projects_details
 
 
-
 ProjectDetails: Basevn = {
     "name": "Wework_ProjectDetails",
     "get": get_projects_details,
