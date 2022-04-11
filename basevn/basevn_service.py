@@ -7,6 +7,7 @@ from db.bigquery import load
 from basevn.pipeline.interface import Resource
 from basevn.pipeline.workflow import workflows, jobs
 from basevn.pipeline.wework import project_details
+from basevn.pipeline.account import users
 
 Response = dict[str, Union[str, int]]
 
@@ -16,6 +17,7 @@ pipelines = {
         workflows.pipeline,
         jobs.pipeline,
         project_details.pipeline,
+        users.pipeline,
     ]
 }
 
@@ -29,5 +31,5 @@ def pipeline_service(resource: Resource) -> dict[str, Union[str, int]]:
             },
             load(resource.name, resource.schema),
             resource.transform,
-            resource.get(session),
+            resource.get(session), # type: ignore
         )()

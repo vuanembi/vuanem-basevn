@@ -9,8 +9,18 @@ from basevn.pipeline.interface import Service
 _GetFn = Callable[[dict[str, Any], int], list[dict]]
 GetFn = Callable[[requests.Session], _GetFn]
 
-WORKFLOW = Service("https://workflow.base.vn/extapi/v1", os.getenv("WORKFLOW_TOKEN"))
-WEWORK = Service("https://wework.base.vn/extapi/v3", os.getenv("WEWORK_TOKEN"))
+ACCOUNT = Service(
+    "https://account.base.vn/extapi/v1",
+    os.getenv("ACCOUNT_TOKEN", ""),
+)
+WORKFLOW = Service(
+    "https://workflow.base.vn/extapi/v1",
+    os.getenv("WORKFLOW_TOKEN", ""),
+)
+WEWORK = Service(
+    "https://wework.base.vn/extapi/v3",
+    os.getenv("WEWORK_TOKEN", ""),
+)
 
 
 def get_single(
