@@ -27,5 +27,5 @@ class TestPipeline:
 
 
 def test_tasks():
-    res = tasks_service()
+    res = tasks_service.tasks_service()
     res
