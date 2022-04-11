@@ -1,6 +1,6 @@
-from basevn.interface import Resource
+from basevn.pipeline.interface import Resource
 from basevn.utils import safe_string
-from basevn.workflow.pipeline import workflows
+from basevn.pipeline.workflow import workflows
 from basevn.repo import WORKFLOW, get_multiple, get_single
 
 pipeline = Resource(

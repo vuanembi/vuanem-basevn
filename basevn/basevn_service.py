@@ -4,9 +4,9 @@ import requests
 from compose import compose
 
 from db.bigquery import load
-from basevn.interface import Resource
-from basevn.workflow.pipeline import workflows, jobs
-from basevn.wework.pipeline import project_details
+from basevn.pipeline.interface import Resource
+from basevn.pipeline.workflow import workflows, jobs
+from basevn.pipeline.wework import project_details
 
 Response = dict[str, Union[str, int]]
 

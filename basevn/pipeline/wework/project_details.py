@@ -1,4 +1,4 @@
-from basevn.interface import Resource
+from basevn.pipeline.interface import Resource
 from basevn.utils import safe_string
 from basevn.repo import WEWORK, get_multiple, get_single
 
