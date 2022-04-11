@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 from typing import Callable
 
+import requests
+
 
 @dataclass
 class Service:
@@ -11,6 +13,6 @@ class Service:
 @dataclass
 class Resource:
     name: str
-    get: Callable[[], list[dict]]
+    get: Callable[[requests.Session], list[dict]]
     transform: Callable[[list[dict]], list[dict]]
     schema: list[dict]

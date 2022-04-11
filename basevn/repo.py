@@ -69,7 +69,7 @@ def get_multiple(
                         body_fn,
                         id_fn,
                     )(id)
-                    for id in get_listing_fn(session)()  # type: ignore
+                    for id in get_listing_fn(session)()
                 ]
                 for i in j
             ]

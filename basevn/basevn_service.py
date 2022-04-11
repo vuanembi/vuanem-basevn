@@ -31,5 +31,5 @@ def pipeline_service(resource: Resource) -> dict[str, Union[str, int]]:
             },
             load(resource.name, resource.schema),
             resource.transform,
-            resource.get(session), # type: ignore
+            resource.get(session),
         )()
