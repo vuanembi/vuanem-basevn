@@ -15,7 +15,7 @@ class TestPipeline:
 
     def test_service(self, resource):
         res = pipeline_service(resource)
-        assert res['num_processed'] > 0
+        assert res["num_processed"] > 0
 
     def test_controller(self, resource):
         res = basevn_controller(

@@ -41,7 +41,7 @@ def create_tasks(
     return len(
         [
             TASKS_CLIENT.create_task(
-                request={ # type: ignore
+                request={  # type: ignore
                     "parent": PARENT,
                     "task": task,
                 }

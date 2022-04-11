@@ -11,7 +11,7 @@ def main(request) -> dict[str, Any]:
     if "tasks" in data:
         fn = tasks_service
     elif "table" in data:
-        fn = basevn_controller # type: ignore
+        fn = basevn_controller  # type: ignore
     else:
         raise ValueError(data)
 

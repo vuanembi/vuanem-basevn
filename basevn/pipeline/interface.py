@@ -7,6 +7,7 @@ import requests
 _GetFn = Callable[[dict[str, Any], int], list[dict]]
 GetFn = Callable[[requests.Session], _GetFn]
 
+
 @dataclass
 class Service:
     base_url: str
