@@ -1,31 +1,20 @@
-import requests
-from google.cloud import bigquery
+from typing import Any
 
-from controller.pipelines import factory, run
-from controller.tasks import create_tasks
-
-BQ_CLIENT = bigquery.Client()
-SESSION = requests.Session()
-DATASET = "IP_Basevn"
+from basevn.basevn_controller import basevn_controller
+from tasks.tasks_service import tasks_service
 
 
-def main(request) -> dict:
+def main(request) -> dict[str, Any]:
     data = request.get_json()
     print(data)
 
     if "tasks" in data:
-        response = create_tasks()
+        fn = tasks_service
     elif "table" in data:
-        response = {
-            "pipelines": "Basevn",
-            "results": run(
-                SESSION,
-                BQ_CLIENT,
-                DATASET,
-                factory(data["resource"], data["table"]),
-            ),
-        }
+        fn = basevn_controller  # type: ignore
     else:
         raise ValueError(data)
+
+    response = fn(data)
     print(response)
     return response

@@ -1,10 +1,16 @@
-from models.base import Basevn, safe_string
-from libs.workflow import get_workflows
+from basevn.pipeline.interface import Resource
+from basevn.utils import safe_string
+from basevn.repo import WORKFLOW, get_single
 
-Workflows: Basevn = {
-    "name": "Workflow_Workflows",
-    "get": get_workflows,
-    "transform": lambda rows: [
+pipeline = Resource(
+    name="Workflow_Workflows",
+    get=get_single(
+        WORKFLOW,
+        "workflows/get",
+        lambda res: res["workflows"],
+        lambda page: {"page_id": page},
+    ),
+    transform=lambda rows: [
         {
             "id": row.get("id"),
             "name": row.get("name"),
@@ -58,7 +64,7 @@ Workflows: Basevn = {
         }
         for row in rows
     ],
-    "schema": [
+    schema=[
         {"name": "id", "type": "STRING"},
         {"name": "name", "type": "STRING"},
         {"name": "owners", "type": "STRING", "mode": "repeated"},
@@ -111,4 +117,4 @@ Workflows: Basevn = {
             ],
         },
     ],
-}
+)

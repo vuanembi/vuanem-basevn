@@ -1,12 +1,35 @@
-from models.base import Basevn, safe_string
-from libs.wework import get_projects_details
+from basevn.pipeline.interface import Resource
+from basevn.utils import safe_string
+from basevn.repo import WEWORK, get_multiple, get_single
 
-
-
-ProjectDetails: Basevn = {
-    "name": "Wework_ProjectDetails",
-    "get": get_projects_details,
-    "transform": lambda rows: [
+pipeline = Resource(
+    name="Wework_ProjectDetails",
+    get=get_multiple(
+        get_listing_fn=get_single(
+            WEWORK,
+            "project/list",
+            lambda res: res["projects"],
+            lambda page: {"page": page},
+        ),
+        get_one_fn=get_single(
+            WEWORK,
+            "project/get.full",
+            res_fn=lambda x: [x],
+        ),
+        id_fn=lambda project: project["id"],
+        body_fn=lambda id: {"id": id},
+        res_fn=lambda project_details: [
+            {
+                "project": project["project"],
+                "tasklists": project["tasklists"],
+                "tasks": project["tasks"],
+                "subtasks": project["subtasks"],
+                "milestones": project["milestones"],
+            }
+            for project in project_details
+        ],
+    ),
+    transform=lambda rows: [
         {
             "project": {
                 "id": row["project"].get("id"),
@@ -132,7 +155,7 @@ ProjectDetails: Basevn = {
         }
         for row in rows
     ],
-    "schema": [
+    schema=[
         {
             "name": "project",
             "type": "record",
@@ -255,4 +278,4 @@ ProjectDetails: Basevn = {
             ],
         },
     ],
-}
+)
