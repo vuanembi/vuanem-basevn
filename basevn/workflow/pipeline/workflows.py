@@ -7,8 +7,8 @@ pipeline = Resource(
     get=get_single(
         WORKFLOW,
         "workflows/get",
-        lambda page: {"page_id": page},
         lambda res: res["workflows"],
+        lambda page: {"page_id": page},
     ),
     transform=lambda rows: [
         {

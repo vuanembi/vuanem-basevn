@@ -1,10 +1,34 @@
-from basevn.wework.wework_repo import get_projects_details
 from basevn.interface import Resource
 from basevn.utils import safe_string
+from basevn.repo import WEWORK, get_multiple, get_single
 
 pipeline = Resource(
     name="Wework_ProjectDetails",
-    get=get_projects_details,
+    get=get_multiple(
+        get_listing_fn=get_single(
+            WEWORK,
+            "project/list",
+            lambda res: res["projects"],
+            lambda page: {"page": page},
+        ),
+        get_one_fn=get_single(
+            WEWORK,
+            "project/get.full",
+            res_fn=lambda x: [x],
+        ),
+        id_fn=lambda project: project["id"],
+        body_fn=lambda id: {"id": id},
+        res_fn=lambda project_details: [
+            {
+                "project": project["project"],
+                "tasklists": project["tasklists"],
+                "tasks": project["tasks"],
+                "subtasks": project["subtasks"],
+                "milestones": project["milestones"],
+            }
+            for project in project_details
+        ],
+    ),
     transform=lambda rows: [
         {
             "project": {

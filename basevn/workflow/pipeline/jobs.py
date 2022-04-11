@@ -10,8 +10,8 @@ pipeline = Resource(
         get_one_fn=get_single(
             WORKFLOW,
             "jobs/get",
-            lambda page: {"page_id": page},
             lambda res: res["jobs"],
+            lambda page: {"page_id": page},
         ),
         id_fn=lambda workflow: workflow["id"],
         body_fn=lambda id: {"workflow_id": id},

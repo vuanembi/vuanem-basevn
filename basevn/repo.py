@@ -16,22 +16,25 @@ WEWORK = Service("https://wework.base.vn/extapi/v3", os.getenv("WEWORK_TOKEN"))
 def get_single(
     service: Service,
     uri: str,
-    page_fn: Callable[[int], dict[str, Any]],
-    res_fn: Callable[[dict[str, Any]], list[dict[str, Any]]],
+    res_fn: Callable[[dict[str, Any]], Any] = lambda x: x,
+    page_fn: Callable[[int], dict[str, Any]] = lambda _: {},
 ) -> GetFn:
     def _get(session):
         def __get(body: dict[str, Any] = {}, page: int = 0) -> list[dict]:
+            payload = {
+                **body,
+                **page_fn(page),
+                "access_token": service.token,
+            }
             with session.post(
                 f"{service.base_url}/{uri}",
-                data={
-                    **body,
-                    **page_fn(page),
-                    "access_token": service.token,
-                },
+                data=payload,
             ) as r:
                 res = r.json()
             data = res_fn(res)
-            return data + __get(body, page + 1) if data else []
+            return (
+                data + __get(body, page + 1) if data and page_fn(page) != {} else data
+            )
 
         return __get
 
