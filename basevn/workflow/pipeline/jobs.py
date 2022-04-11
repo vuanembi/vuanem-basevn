@@ -1,10 +1,11 @@
-from models.base import Basevn, safe_string
-from libs.workflow import get_jobs
+from basevn.workflow.workflow_repo import get_jobs
+from basevn.interface import Resource
+from basevn.utils import safe_string
 
-Jobs: Basevn = {
-    "name": "Workflow_Jobs",
-    "get": get_jobs,
-    "transform": lambda rows: [
+pipeline = Resource(
+    name="Workflow_Jobs",
+    get=get_jobs,
+    transform=lambda rows: [
         {
             "id": row.get("id"),
             "type": row.get("type"),
@@ -102,7 +103,7 @@ Jobs: Basevn = {
         }
         for row in rows
     ],
-    "schema": [
+    schema=[
         {"name": "id", "type": "STRING"},
         {"name": "type", "type": "STRING"},
         {"name": "status", "type": "STRING"},
@@ -203,4 +204,4 @@ Jobs: Basevn = {
             ],
         },
     ],
-}
+)
