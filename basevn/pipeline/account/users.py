@@ -1,5 +1,4 @@
 from basevn.pipeline.interface import Resource
-from basevn.utils import safe_string
 from basevn.repo import ACCOUNT, get_single
 
 pipeline = Resource(
