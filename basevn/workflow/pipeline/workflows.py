@@ -1,10 +1,15 @@
-from basevn.workflow.workflow_repo import get_workflows
 from basevn.interface import Resource
 from basevn.utils import safe_string
+from basevn.repo import WORKFLOW, get_single
 
 pipeline = Resource(
     name="Workflow_Workflows",
-    get=get_workflows,
+    get=get_single(
+        WORKFLOW,
+        "workflows/get",
+        lambda page: {"page_id": page},
+        lambda res: res["workflows"],
+    ),
     transform=lambda rows: [
         {
             "id": row.get("id"),

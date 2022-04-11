@@ -1,10 +1,21 @@
-from basevn.workflow.workflow_repo import get_jobs
 from basevn.interface import Resource
 from basevn.utils import safe_string
+from basevn.workflow.pipeline import workflows
+from basevn.repo import WORKFLOW, get_multiple, get_single
 
 pipeline = Resource(
     name="Workflow_Jobs",
-    get=get_jobs,
+    get=get_multiple(
+        get_listing_fn=workflows.pipeline.get,
+        get_one_fn=get_single(
+            WORKFLOW,
+            "jobs/get",
+            lambda page: {"page_id": page},
+            lambda res: res["jobs"],
+        ),
+        id_fn=lambda workflow: workflow["id"],
+        body_fn=lambda id: {"workflow_id": id},
+    ),
     transform=lambda rows: [
         {
             "id": row.get("id"),
