@@ -4,10 +4,7 @@ import os
 import requests
 from compose import compose
 
-from basevn.pipeline.interface import Service
-
-_GetFn = Callable[[dict[str, Any], int], list[dict]]
-GetFn = Callable[[requests.Session], _GetFn]
+from basevn.pipeline.interface import Service, GetFn
 
 ACCOUNT = Service(
     "https://account.base.vn/extapi/v1",

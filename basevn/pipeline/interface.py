@@ -1,8 +1,11 @@
+from typing import Any
 from dataclasses import dataclass
 from typing import Callable
 
 import requests
 
+_GetFn = Callable[[dict[str, Any], int], list[dict]]
+GetFn = Callable[[requests.Session], _GetFn]
 
 @dataclass
 class Service:
@@ -13,6 +16,6 @@ class Service:
 @dataclass
 class Resource:
     name: str
-    get: Callable[[requests.Session], list[dict]]
-    transform: Callable[[list[dict]], list[dict]]
-    schema: list[dict]
+    get: GetFn
+    transform: Callable[[list[dict[str, Any]]], list[dict[str, Any]]]
+    schema: list[dict[str, Any]]
