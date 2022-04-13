@@ -3,9 +3,10 @@ from dataclasses import dataclass
 from typing import Callable
 
 import requests
+import httpx
 
 _GetFn = Callable[[dict[str, Any], int], list[dict]]
-GetFn = Callable[[requests.Session], _GetFn]
+GetFn = Callable[[httpx.AsyncClient], _GetFn]
 
 
 @dataclass

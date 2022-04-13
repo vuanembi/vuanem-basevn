@@ -1,6 +1,8 @@
 from typing import Union
+import asyncio
 
 import requests
+import httpx
 from compose import compose
 
 from db.bigquery import load
@@ -26,13 +28,16 @@ pipelines = {
 
 
 def pipeline_service(resource: Resource) -> dict[str, Union[str, int]]:
-    with requests.Session() as session:
-        return compose(
-            lambda x: {
-                "table": resource.name,
-                "num_processed": x,
-            },
-            load(resource.name, resource.schema),
-            resource.transform,
-            resource.get(session),
-        )()
+    async def _get():
+        async with httpx.AsyncClient(timeout=None) as client:
+            return await resource.get(client)()
+
+    return compose(
+        lambda x: {
+            "table": resource.name,
+            "num_processed": x,
+        },
+        load(resource.name, resource.schema),
+        resource.transform,
+        asyncio.run,
+    )(_get())
