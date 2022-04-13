@@ -7,7 +7,7 @@ pipeline = Resource(
     get=get_single(
         EHIRING,
         "opening/list",
-        lambda res: res["openings"],
+        lambda res: res["openings"] if 'openings' in res else [],
         lambda page: {"page": page},
     ),
     transform=lambda rows: [
