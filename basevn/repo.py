@@ -1,7 +1,8 @@
 from typing import Callable, Any
 import os
+import asyncio
 
-import requests
+import httpx
 from compose import compose
 
 from basevn.pipeline.interface import Service, GetFn
@@ -29,22 +30,24 @@ def get_single(
     uri: str,
     res_fn: Callable[[dict[str, Any]], Any] = lambda x: x,
     page_fn: Callable[[int], dict[str, Any]] = lambda _: {},
-) -> GetFn:
-    def _get(session):
-        def __get(body: dict[str, Any] = {}, page: int = 0) -> list[dict]:
+):
+    def _get(client: httpx.AsyncClient):
+        async def __get(body: dict[str, Any] = {}, page: int = 0) -> list[dict]:
             payload = {
                 **body,
                 **page_fn(page),
                 "access_token": service.token,
             }
-            with session.post(
+            r = await client.post(
                 f"{service.base_url}/{uri}",
                 data=payload,
-            ) as r:
-                res = r.json()
+            )
+            res = r.json()
             data = res_fn(res)
             return (
-                data + __get(body, page + 1) if data and page_fn(page) != {} else data
+                data + await __get(body, page + 1)
+                if data and page_fn(page) != {}
+                else data
             )
 
         return __get
@@ -59,21 +62,18 @@ def get_multiple(
     res_fn: Callable[[list[dict[str, Any]]], list[dict[str, Any]]] = lambda x: x,
     body_fn: Callable[[dict[str, Any]], Any] = lambda _: {},
 ):
-    def _get(session: requests.Session):
-        def __get():
-            return [
-                i
-                for j in [
-                    compose(
-                        res_fn,
-                        get_one_fn(session),
-                        body_fn,
-                        id_fn,
-                    )(id)
-                    for id in get_listing_fn(session)()
-                ]
-                for i in j
+    def _get(client: httpx.AsyncClient):
+        async def __get():
+            ids = [
+                compose(
+                    body_fn,
+                    id_fn,
+                )(id)
+                for id in await get_listing_fn(client)()
             ]
+            tasks = [asyncio.create_task(get_one_fn(client)(id)) for id in ids]
+            results = await asyncio.gather(*tasks)
+            return [i for j in results for i in res_fn(j)]
 
         return __get
 
