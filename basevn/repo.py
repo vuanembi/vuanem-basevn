@@ -18,6 +18,10 @@ WEWORK = Service(
     "https://wework.base.vn/extapi/v3",
     os.getenv("WEWORK_TOKEN", ""),
 )
+EHIRING = Service(
+    "https://hiring.base.vn/publicapi/v2/",
+    os.getenv("EHIRING_TOKEN", ""),
+)
 
 
 def get_single(
