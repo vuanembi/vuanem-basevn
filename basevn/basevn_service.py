@@ -1,7 +1,6 @@
 from typing import Union
 import asyncio
 
-import requests
 import httpx
 from compose import compose
 
