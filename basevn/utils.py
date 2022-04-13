@@ -9,6 +9,8 @@ def safe_string(x: Any) -> str:
 
 def parse_unix_ts(x: Optional[str]) -> Optional[str]:
     try:
-        return datetime.fromtimestamp(int(x)).isoformat(timespec="seconds") if x else None
+        return (
+            datetime.fromtimestamp(int(x)).isoformat(timespec="seconds") if x else None
+        )
     except:
         return None

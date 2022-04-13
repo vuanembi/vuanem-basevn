@@ -8,7 +8,7 @@ pipeline = Resource(
         get_listing_fn=get_single(
             WEWORK,
             "project/list",
-            lambda res: res["projects"] if 'projects' in res else [],
+            lambda res: res["projects"] if "projects" in res else [],
             lambda page: {"page": page},
         ),
         get_one_fn=get_single(
