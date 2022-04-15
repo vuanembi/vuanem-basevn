@@ -9,6 +9,7 @@ pipeline = Resource(
         "opening/list",
         lambda res: res["openings"] if "openings" in res else [],
         lambda page: {"page": page},
+        1,
     ),
     transform=lambda rows: [
         {

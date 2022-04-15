@@ -12,6 +12,7 @@ pipeline = Resource(
             "candidate/list",
             lambda res: res["candidates"] if "candidates" in res else [],
             lambda page: {"page": page},
+            1,
         ),
         id_fn=lambda opening: opening["id"],
         body_fn=lambda id: {"opening_id": id},
