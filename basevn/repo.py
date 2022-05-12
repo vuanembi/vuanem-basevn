@@ -30,9 +30,13 @@ def get_single(
     uri: str,
     res_fn: Callable[[dict[str, Any]], Any] = lambda x: x,
     page_fn: Callable[[int], dict[str, Any]] = lambda _: {},
+    page_start: int = 0,
 ):
     def _get(client: httpx.AsyncClient):
-        async def __get(body: dict[str, Any] = {}, page: int = 0) -> list[dict]:
+        async def __get(
+            body: dict[str, Any] = {},
+            page: int = page_start,
+        ) -> list[dict]:
             payload = {
                 **body,
                 **page_fn(page),

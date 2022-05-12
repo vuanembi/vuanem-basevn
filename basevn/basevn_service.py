@@ -9,7 +9,7 @@ from basevn.pipeline.interface import Resource
 from basevn.pipeline.workflow import workflows, jobs
 from basevn.pipeline.wework import project_details
 from basevn.pipeline.account import users
-from basevn.pipeline.ehiring import openings, candidates
+from basevn.pipeline.ehiring import openings, candidates, departments
 
 Response = dict[str, Union[str, int]]
 
@@ -22,6 +22,7 @@ pipelines = {
         users.pipeline,
         openings.pipeline,
         candidates.pipeline,
+        departments.pipeline,
     ]
 }
 
