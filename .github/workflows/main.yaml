@@ -39,8 +39,10 @@ jobs:
       - name: Create ${{ env.ENV_KEY }}
         run: |
           echo "ACCOUNT_TOKEN: ${{ secrets.ACCOUNT_TOKEN }}" >> ${{ env.ENV_FILE }}
+          echo "EHIRING_TOKEN: ${{ secrets.EHIRING_TOKEN }}" >> ${{ env.ENV_FILE }}
           echo "WORKFLOW_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}" >> ${{ env.ENV_FILE }}
           echo "WEWORK_TOKEN: ${{ secrets.WEWORK_TOKEN }}" >> ${{ env.ENV_FILE }}
+
           echo "GCP_SA: ${{ env.GCP_SA }}" >> ${{ env.ENV_FILE }}
           echo "PUBLIC_URL: ${{ env.PUBLIC_URL }}" >> ${{ env.ENV_FILE }}
 
