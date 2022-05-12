@@ -19,6 +19,7 @@ pipeline = Resource(
     transform=lambda rows: [
         {
             "id": row.get("id"),
+            "name": row.get("name"),
             "type": row.get("type"),
             "status": row.get("status"),
             "state": row.get("state"),
@@ -116,6 +117,7 @@ pipeline = Resource(
     ],
     schema=[
         {"name": "id", "type": "STRING"},
+        {"name": "name", "type": "STRING"},
         {"name": "type", "type": "STRING"},
         {"name": "status", "type": "STRING"},
         {"name": "state", "type": "STRING"},
