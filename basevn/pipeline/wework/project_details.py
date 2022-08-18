@@ -1,4 +1,3 @@
-from tkinter.messagebox import NO
 from basevn.pipeline.interface import Resource
 from basevn.utils import safe_string
 from basevn.repo import WEWORK, get_multiple, get_single
@@ -165,23 +164,23 @@ pipeline = Resource(
             else [],
             "milestones":[
                 {
-                    "id": milestones.get("id"),
-                    "user_id": milestones.get("user_id"),
-                    "username": milestones.get("username"),
-                    "creator_id": milestones.get("creator_id"),
-                    "name": milestones.get("name"),
-                    "content": milestones.get("content"),
-                    "time": milestones.get("time"),
-                    "color": milestones.get("color"),
-                    "dept_id": milestones.get("dept_id"),
-                    "project_id": milestones.get("project_id"),
-                    "since": milestones.get("since"),
-                    "system_id": milestones.get("system_id"),
-                    "done": milestones.get("done"),
-                    "total": milestones.get("total"),
-                    "complete": convert_string(milestones.get("complete")),
+                    "id": milestone.get("id"),
+                    "user_id": milestone.get("user_id"),
+                    "username": milestone.get("username"),
+                    "creator_id": milestone.get("creator_id"),
+                    "name": milestone.get("name"),
+                    "content": milestone.get("content"),
+                    "time": milestone.get("time"),
+                    "color": milestone.get("color"),
+                    "dept_id": milestone.get("dept_id"),
+                    "project_id": milestone.get("project_id"),
+                    "since": milestone.get("since"),
+                    "system_id": milestone.get("system_id"),
+                    "done": milestone.get("done"),
+                    "total": milestone.get("total"),
+                    "complete": convert_string(milestone.get("complete")),
                 }
-                for milestones in row["milestones"]
+                for milestone in row["milestones"]
             ]
             if row.get("milestones", [])
             else [],
