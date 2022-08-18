@@ -152,6 +152,26 @@ pipeline = Resource(
             ]
             if row.get("tasks", [])
             else [],
+            "milestones":[
+                {
+                    "id": milestones.get("id"),
+                    "user_id": milestones.get("user_id"),
+                    "username": milestones.get("username"),
+                    "creator_id": milestones.get("creator_id"),
+                    "name": milestones.get("name"),
+                    "content": milestones.get("content"),
+                    "time": milestones.get("time"),
+                    "color": milestones.get("color"),
+                    "dept_id": milestones.get("dept_id"),
+                    "project_id": milestones.get("project_id"),
+                    "since": milestones.get("since"),
+                    "system_id": milestones.get("system_id"),
+                    "done": milestones.get("done"),
+                    "total": milestones.get("total"),
+                    "complete": milestones.get("complete"),
+                }
+                for milestones in row["milestones"]
+            ]
         }
         for row in rows
     ],
@@ -276,6 +296,28 @@ pipeline = Resource(
                 {"name": "milestone_id", "type": "STRING"},
                 {"name": "real_order", "type": "STRING"},
             ],
+        },
+        {
+            "name": "milestones",
+            "type": "record",
+            "mode": "repeated",
+            "fields": [
+                {"name": "id", "type": "STRING"},
+                {"name": "user_id", "type": "STRING"},
+                {"name": "username", "type": "STRING"},
+                {"name": "creator_id", "type": "STRING"},
+                {"name": "name", "type": "STRING"},
+                {"name": "content", "type": "STRING"},
+                {"name": "time", "type": "STRING"},
+                {"name": "color", "type": "STRING"},
+                {"name": "dept_id", "type": "STRING"},
+                {"name": "project_id", "type": "STRING"},
+                {"name": "since", "type": "STRING"},
+                {"name": "system_id", "type": "STRING"},
+                {"name": "done", "type": "INTEGER"},
+                {"name": "total", "type": "INTEGER"},
+                {"name": "complete", "type": "INTEGER"}
+            ]
         },
     ],
 )
