@@ -2,6 +2,16 @@ from basevn.pipeline.interface import Resource
 from basevn.utils import safe_string
 from basevn.repo import WEWORK, get_multiple, get_single
 
+
+def convert_string(string):
+    if type(string) in [float, int]:
+        return string
+    elif type(string) == str:
+        return float(string.replace(",", ""))
+    else:
+        return None
+
+
 pipeline = Resource(
     name="Wework_ProjectDetails",
     get=get_multiple(
@@ -152,6 +162,28 @@ pipeline = Resource(
             ]
             if row.get("tasks", [])
             else [],
+            "milestones":[
+                {
+                    "id": milestone.get("id"),
+                    "user_id": milestone.get("user_id"),
+                    "username": milestone.get("username"),
+                    "creator_id": milestone.get("creator_id"),
+                    "name": milestone.get("name"),
+                    "content": milestone.get("content"),
+                    "time": milestone.get("time"),
+                    "color": milestone.get("color"),
+                    "dept_id": milestone.get("dept_id"),
+                    "project_id": milestone.get("project_id"),
+                    "since": milestone.get("since"),
+                    "system_id": milestone.get("system_id"),
+                    "done": milestone.get("done"),
+                    "total": milestone.get("total"),
+                    "complete": convert_string(milestone.get("complete")),
+                }
+                for milestone in row["milestones"]
+            ]
+            if row.get("milestones", [])
+            else [],
         }
         for row in rows
     ],
@@ -276,6 +308,28 @@ pipeline = Resource(
                 {"name": "milestone_id", "type": "STRING"},
                 {"name": "real_order", "type": "STRING"},
             ],
+        },
+        {
+            "name": "milestones",
+            "type": "record",
+            "mode": "repeated",
+            "fields": [
+                {"name": "id", "type": "STRING"},
+                {"name": "user_id", "type": "STRING"},
+                {"name": "username", "type": "STRING"},
+                {"name": "creator_id", "type": "STRING"},
+                {"name": "name", "type": "STRING"},
+                {"name": "content", "type": "STRING"},
+                {"name": "time", "type": "STRING"},
+                {"name": "color", "type": "STRING"},
+                {"name": "dept_id", "type": "STRING"},
+                {"name": "project_id", "type": "STRING"},
+                {"name": "since", "type": "STRING"},
+                {"name": "system_id", "type": "STRING"},
+                {"name": "done", "type": "NUMERIC"},
+                {"name": "total", "type": "NUMERIC"},
+                {"name": "complete", "type": "NUMERIC"}
+            ]
         },
     ],
 )
