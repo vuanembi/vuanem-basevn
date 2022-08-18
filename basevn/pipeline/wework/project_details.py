@@ -172,6 +172,8 @@ pipeline = Resource(
                 }
                 for milestones in row["milestones"]
             ]
+            if row.get("milestones", [])
+            else [],
         }
         for row in rows
     ],
