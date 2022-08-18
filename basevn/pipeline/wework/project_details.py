@@ -1,6 +1,17 @@
+from tkinter.messagebox import NO
 from basevn.pipeline.interface import Resource
 from basevn.utils import safe_string
 from basevn.repo import WEWORK, get_multiple, get_single
+
+
+def convert_string(string):
+    if type(string) in [float, int]:
+        return string
+    elif type(string) == str:
+        return float(string.replace(",", ""))
+    else:
+        return None
+
 
 pipeline = Resource(
     name="Wework_ProjectDetails",
@@ -168,7 +179,7 @@ pipeline = Resource(
                     "system_id": milestones.get("system_id"),
                     "done": milestones.get("done"),
                     "total": milestones.get("total"),
-                    "complete": milestones.get("complete"),
+                    "complete": convert_string(milestones.get("complete")),
                 }
                 for milestones in row["milestones"]
             ]
@@ -316,9 +327,9 @@ pipeline = Resource(
                 {"name": "project_id", "type": "STRING"},
                 {"name": "since", "type": "STRING"},
                 {"name": "system_id", "type": "STRING"},
-                {"name": "done", "type": "INTEGER"},
-                {"name": "total", "type": "INTEGER"},
-                {"name": "complete", "type": "INTEGER"}
+                {"name": "done", "type": "NUMERIC"},
+                {"name": "total", "type": "NUMERIC"},
+                {"name": "complete", "type": "NUMERIC"}
             ]
         },
     ],
